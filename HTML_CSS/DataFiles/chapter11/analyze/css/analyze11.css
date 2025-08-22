@@ -1,0 +1,62 @@
+/*
+    Student Name
+	File Name: 
+	Current Date: 
+*/
+
+/* CSS reset */
+body, header, main, footer, figure, h1, h2 {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Style rule for body and images */
+body {
+	background-color: #000033;
+}
+
+img {
+    max-width: 100%;
+}
+
+figure {
+    text-align: center;
+}
+
+/* Style rule for the container */
+#container {
+	width: 90%;
+	margin: 0 auto;
+}
+
+/* Style rule for header content */
+header {
+	padding: 2%;
+	text-align: center;
+	font-size: 2em;
+	font-weight: bold;
+}
+
+h1 {
+	color: #fff;
+}
+
+/* Style rule for the main area */
+main {
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 1em;
+	margin-top: 0.5em;
+	padding: 2%;
+	border-radius: 1em;
+	background-color: #E6E6FF;
+	border: inset 0.2em #7A6D68; 
+}
+
+/* Style rule for the footer area */
+footer {
+	font-size: .90em;
+	text-align: center;
+	margin-top: 2em;
+	color: #fff;
+}

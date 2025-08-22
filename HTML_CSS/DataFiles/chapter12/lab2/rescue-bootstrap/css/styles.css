@@ -1,0 +1,30 @@
+/*
+    Student Name: Maria Cruz
+    Date: Current Date
+    File Name: styles.css
+*/
+
+
+
+/* Media Query for Tablet Viewport */
+@media (min-width: 768px) { 
+    
+    .welcome {
+        top: 20%;
+        left: 5%;
+        padding: 2em;
+    }
+
+}
+
+/* Media Query for Desktop Viewport */
+@media (min-width: 992px) { 
+    
+    .hero {
+        background-position: left;
+    }
+    
+    .display-1 {
+        font-size: 8em;
+    }
+}
