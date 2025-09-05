@@ -1,13 +1,13 @@
 /*
 
-Justin Thompson
-9/24/25
-styles.css
+  Justin Thompson
+  9/24/25
+  styles.css
 
 */
 
 /*
-CSS Reset
+  CSS Reset
 */
 
 body, header, nav, main, footer,
@@ -30,7 +30,7 @@ img{
 }
 
 /*
-Style rules for header content
+  Style rules for header content
 */
 
 header h1{
@@ -42,7 +42,7 @@ header h1{
 }
 
 /*
-Style Rules for navigation area
+  Style Rules for navigation area
 */
 
  nav{
@@ -64,17 +64,19 @@ nav li{
 nav li a{
   display: block;
   color: #e3eaf8;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
-  padding-right: 2em;
-  padding-left: 2em;
+  padding: 0.5em 2em;
+ 
   text-decoration: none;
 }  
+
 /*
-Style Rules for main content
+  Style Rules for main content
 */
+
 main{
   padding: 2%;
+  font-family:  Geneva ,Arial,sans-serif;
+  overflow: auto;
 }
 main p{
   font-size: 1.25em;
@@ -104,14 +106,15 @@ main h3{
 }
 
 /* 
-Style rules for footer content
+  Style rules for footer content
 */
+
  footer{
   text-align: center;
   font-size: 0.85em;
   background-color: #1d396d;
   color: #e3eaf8;
-  padding: 1%,0%;
+  padding: 1% 0%;
  }
  footer a{
   color: #e3eaf8;
