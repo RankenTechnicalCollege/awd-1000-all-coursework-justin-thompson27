@@ -12,9 +12,12 @@ body, header, nav, main, footer, img, h1, h3{
 
 }
 /* Style rules for body and images */
-body{
+html, body{
   background-color: #34c230;
-
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 img{
@@ -46,20 +49,21 @@ nav li{
   display: inline-block;
   font-size: 1.5em;
   font-family: 'Times New Roman', Times, serif;
-  /* font-weight: bold;  */
+
 }
 
 nav li a{
   display: block;
   color: #f6eee4;
   padding: 0.5em 2em;
-  text-decoration: 0; 
+  text-decoration: none; 
 }
 
 /* Style rules for main content */
 main{
   padding: 2%;
   font-family:'Times New Roman', Times, serif; 
+  flex: 1;
 }
 
 main p{
