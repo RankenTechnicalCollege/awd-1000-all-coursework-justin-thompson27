@@ -1,0 +1,103 @@
+/* 
+  Student Name: Justin Thompson
+  File name: styles.css
+  Current Date: 09/09/2025
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, img, h1, h3{
+  margin: 0;
+  padding: 0;
+  border: 0;
+
+}
+/* Style rules for body and images */
+body{
+  background-color: #34c230;
+
+}
+
+img{
+  max-width: 50%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+/* Style rules for header*/
+header{
+  color: black;
+  text-align: center;
+  padding: 1% 2% 3%;
+}
+
+/* Style rules for navigation area */
+nav{
+
+background-color: #6f28b4;
+}
+
+nav ul{
+  list-style: none;
+  margin: 0;
+  text-align: center; 
+}
+
+nav li{
+  display: inline-block;
+  font-size: 1.5em;
+  font-family: 'Times New Roman', Times, serif;
+  /* font-weight: bold;  */
+}
+
+nav li a{
+  display: block;
+  color: #f6eee4;
+  padding: 0.5em 2em;
+  text-decoration: 0; 
+}
+
+/* Style rules for main content */
+main{
+  padding: 2%;
+  font-family:'Times New Roman', Times, serif; 
+}
+
+main p{
+  font-size: 1.12em; 
+}
+
+main h3{
+  padding-bottom: 2%;
+}
+
+main ul{
+   list-style-type: none;
+}
+
+.link{
+  color:#f6eee4;
+  text-decoration: none;
+  font-style: italic; 
+  font-weight: bold;
+}
+
+.center{
+  text-align: center;
+} 
+
+#projects > ul >li{
+  display: block;
+  padding: 0.3em 0em;
+ 
+}
+
+
+/* Style rules for footer content */
+footer{
+  font-size: 0.85em;
+  background-color: #1a4363;
+  text-align: center;
+  padding: 1% 0%; 
+  
+}
+
