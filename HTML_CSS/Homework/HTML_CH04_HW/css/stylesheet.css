@@ -1,4 +1,4 @@
-
+/* Style Rules */
 img{
     max-width: 100%;
     
@@ -14,13 +14,14 @@ main, nav , footer{
 ;
 }
 
+/* Header Style Rules */
 header h1,header h3 {
   color:   rgba(78,30,30,255);
   text-align: center;
   font: 40px/normal italic normal Cambria, Georgia, Times, serif;
 
 }
-
+/* Nav Style Rules */
 nav{
 background-color:#7e8d9b;
 clear: left;
@@ -46,15 +47,7 @@ nav li a{
   text-decoration: none; 
 }
 
-a:hover{
-  color: #1e1a15;
-  text-shadow: 2px 2px 4px;
-}
-
-a:focus{
-  background-color: #5b6954;
-
-}
+/* Main Style Rules */
 main{
   padding: 1% 2%;
   color: #f6eee4;
@@ -82,15 +75,17 @@ main dd{
   padding: 2% 0%;
 
  }
-
+/* Class Style Rules */
 .abilites{
   font-size: 2em;
   font-style: italic; 
   font-weight: bold;
 }
+
 .abilitesimages{
   padding: 2% 0%;;
 }
+
 .center{
     
     padding: 1%;
@@ -99,11 +94,17 @@ main dd{
     
 }
 
-.color{
- color: #f1f0f5;
- 
+a:hover{
+  color: #1e1a15;
+  text-shadow: 2px 2px 4px;
 }
 
+a:focus{
+  background-color: #5b6954;
+
+}
+
+/* Footer Style Rules */
 footer{
   
   font-size: 0.85em;
