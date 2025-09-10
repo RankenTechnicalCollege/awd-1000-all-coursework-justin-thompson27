@@ -23,11 +23,37 @@ body {
 
 /* sticky */
 
+.sticky{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0%;
+
+
+}
 
 /* relative */
+
+.relative{
+    position: relative;
+    top: 150px;
+    left: 25px;
+    
+}
 
 
 /* fixed */
 
+.fixed{
+    position: fixed;
+    top: 200px;
+    right: 40px;
+}
+
 
 /* absolute */
+
+.absolute{
+    position: absolute;
+    bottom: 79px;
+    right: 40px;
+}
