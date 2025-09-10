@@ -1,5 +1,115 @@
-.wrapper
-{
-  width:80%;
-  margin: auto;
+
+img{
+    max-width: 100%;
+    
+    display: block;
 }
+body{
+    background-color: #5D6532 ;
+}
+
+main, nav , footer{
+ font-family:'Gill Sans', 'Gill Sans MT', sans-serif;
+
+;
+}
+
+header h1,header h3 {
+  color:   rgba(78,30,30,255);
+  text-align: center;
+  font: 40px/normal italic normal Cambria, Georgia, Times, serif;
+
+}
+
+nav{
+background-color:#7e8d9b;
+clear: left;
+
+}
+
+nav ul{
+  list-style: none;
+  margin: 0;
+  text-align: center; 
+}
+
+nav li{
+  display: inline-block;
+  font-size: 2em;
+  
+}
+
+nav li a{
+  display: block;
+  color: #f6eee4;
+  padding: 1em 3em;
+  text-decoration: none; 
+}
+
+a:hover{
+  color: #1e1a15;
+  text-shadow: 2px 2px 4px;
+}
+
+a:focus{
+  background-color: #5b6954;
+
+}
+main{
+  padding: 1% 2%;
+  color: #f6eee4;
+  
+}
+
+main p{
+  font-size: 1.25em; 
+}
+
+main h3{
+  padding: .2% 0%;
+  color: #601d13;
+}
+
+main dd{
+  padding: 1%;
+  display: block;
+  font-size: 1.5em;
+  color: #7e8d9b;
+}
+
+ dl > dt{
+  color:#4e1e1e;
+  padding: 2% 0%;
+
+ }
+
+.abilites{
+  font-size: 2em;
+  font-style: italic; 
+  font-weight: bold;
+}
+.abilitesimages{
+  padding: 2% 0%;;
+}
+.center{
+    
+    padding: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.color{
+ color: #f1f0f5;
+ 
+}
+
+footer{
+  
+  font-size: 0.85em;
+  background-color: rgb(41,34,23);
+  color:  #FCF5E5;
+  text-align: center;
+  padding: 2% 0% 1%; 
+}  
+
