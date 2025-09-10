@@ -1,4 +1,4 @@
-/* Style Rules */
+/* Style rule for body and images */
 img{
     max-width: 100%;
     
@@ -7,7 +7,7 @@ img{
 body{
     background-color: #5D6532 ;
 }
-
+/* Multiple class selector  */
 main, nav , footer{
  font-family:'Gill Sans', 'Gill Sans MT', sans-serif;
 
