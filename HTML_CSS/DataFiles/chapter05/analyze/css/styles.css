@@ -21,6 +21,13 @@ img {
     display: block;
 }
 
+/* Style rules for mobile viewport */
+
+/* Style rules for tablet-desktop */
+.tablet-desktop{
+    display: none;
+}
+
 /* Style rules for header content */
 header h1 {
     text-align: center;
@@ -38,6 +45,7 @@ nav {
 
 nav ul {
     text-align: center;
+     list-style-type: none;
 }
 
 nav li {
@@ -45,6 +53,8 @@ nav li {
     font-family: Geneva, Arial, sans-serif;
     font-weight: bold;
     padding: 3%;
+    display: inline-block;
+   
 }
 
 nav li a {
@@ -62,6 +72,15 @@ main {
 
 main p {
     font-size: 1.25em;
+}
+
+.btn{
+    background-color: #375f1b;
+    padding: 2%;
+    margin: 2%, auto;
+    width: 80%;
+    text-align: center;
+    border-radius: 5px;
 }
 
 /* Style rules for footer content */
