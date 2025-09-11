@@ -33,7 +33,7 @@ img{
 }
 
 .tab-desk{
- visibility: hidden;  
+ display: none;  
 }
 
 /* Style rules for header area */
@@ -66,8 +66,7 @@ nav ul{
 
 nav li{
   display: block;
-  border-top: #f6eee4;
-  border-width: .5px;
+  border-top: solid 0.5px #f6eee4;
   font-size: 1.5em;
   font-family: Geneva, Arial, sans-serif;
   font-weight: bold;
@@ -118,7 +117,7 @@ main ul{
   border-radius: 6px;
 }
 
-#info{
+#info ul{
   margin-left: 10%;
 }
 
@@ -142,6 +141,7 @@ main ul{
 
 /* Style rules for footer content */
 footer{
+  text-align: center;
   font-size: 0.85em;
   background-color: #2a1f14;
   color: #f6eee4;
