@@ -1,7 +1,7 @@
 /*
-Author:
-Date:
-File Name: 
+Author: Justin Thompson
+Date: 9/15/2025
+File Name: apply06.css
 */
 
 /* CSS Reset */
@@ -13,7 +13,8 @@ body, header, nav, main, footer, h1, div, article, h2 {
 
 /* Style rules for body */
 body {
-	background-color: #fe9972;
+
+    background: linear-gradient(to left,#fe9972,#ffe5dc);
 }
 
 /* Style rules for mobile viewport */
@@ -44,4 +45,31 @@ footer {
 	font-size: .70em;
 	text-align: center;
     color: #341509;
+}
+
+/* Media Query for Tablet Viewport */
+@media all and (min-width: 481px){
+    article{
+        width: 43%;
+        float: left;
+        height: 160px;
+    }
+
+    footer{
+        clear: left;
+    }
+}
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 900px)
+{
+    article{
+        width: 27%;
+        height: 140px;
+    }
+    article :hover{
+        background-color: #ffe5dc;
+        color: #a22c02;
+    }
+
 }
