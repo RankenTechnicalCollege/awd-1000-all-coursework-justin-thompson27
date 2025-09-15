@@ -3,10 +3,17 @@
 
 
  @media screen and (max-width: 767px) {
-  .mobile{
+  .hideformobile{
    display: none;
+   clear: both;
   }
 
+  .mobileimgs{
+   
+     margin-left: auto;
+     margin-right: auto;
+     width: 50%;
+  }
   nav{
   position: -webkit-sticky;
   position: sticky;
@@ -25,6 +32,37 @@
   header h1{
     font-size: 1.2em;
   }
+
+  main p{
+    text-align: center;
+    clear: both;
+  }
+
+  .floatforimgs{
+    clear: both;
+  }
+  
+  .floatforp{
+    clear: both;
+  }
+
+   .tel-link{
+    background-color: #c31c41;
+    border-radius: 10px;
+    width: 40%;
+    padding: 2%;
+    margin: 4% auto;
+
+  }
+
+  .tel-link a{
+    color: #9052DA;
+    text-decoration: none;
+  }
+
+  #map{
+    width: 80%;
+  }
 } 
 
 /* Style rules for tab-desk */
@@ -39,8 +77,36 @@
   nav li a{
      padding: 1em 2em;
   }
+   .floatleft{
+  width: 45%;
+  float: left;
+  padding: 1%;  
+  } 
 
-}  
+  .floatright{
+  
+  width: 45%; 
+  float: right; 
+
+  }
+
+  
+ }
+/*  .floatforimgs{
+  width: 45%;
+  float: left;
+  padding: 1%;  
+  } 
+ .floatforp{
+  
+  width: 45%; 
+  float: right; 
+
+ }  */
+
+
+
+
 
 /* Style rules for image */
 img{
@@ -49,6 +115,7 @@ img{
   display: block;
  
 }
+
 
 /* Multiple class selector  */
 main, nav , footer{
@@ -147,6 +214,10 @@ main li p{
   color: #250E42;
 }
 
+main a{
+  
+  color: #8c009c;
+}
 /* Style rules for footer */
 
 footer{
@@ -165,20 +236,30 @@ a:hover{
   text-shadow: 4px 2px 4px; 
 }
 
-.floatforimgs{
+#map{
+  border: 5px solid #33042D;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ #contact{
+    text-align: center;
+  }
+/*  .floatforimgs{
   width: 45%;
   float: left;
   padding: 1%;
   
  
-}
+} 
  
 
-.floatforp{
+ .floatforp{
   
   width: 45%; 
   float: right; 
 
  
-}
+}  */
 
