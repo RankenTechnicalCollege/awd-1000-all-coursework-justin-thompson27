@@ -1,7 +1,7 @@
 /*
-Student:
-Date:
-File Name: 
+    Student's Name: Justin Thompson
+    Date: 9/15/2025
+    File name: extend06.html; 
 */
 
 /* CSS Reset */
@@ -40,6 +40,25 @@ main {
 
 /* Gradient style rules */
 
+.gradient1{
+    background: linear-gradient(to right,#67afcb, #1a3e4c 25%);
+}
+
+.gradient2{
+    background: linear-gradient(to left, #d4f7ec,#448d76 90%);
+}
+
+.gradient3{
+    background: linear-gradient(to top left, #efddfd,#36065b);
+}
+
+.gradient4{
+    background: linear-gradient(#e6e6ff,#70dbdb,#ffffcc,#cc6699) ;
+}
+
+.gradient5{
+    background: repeating-linear-gradient(#df80ff 10%, #ccffff 20%);
+}
 
 /* Style rule for footer */
 footer {
