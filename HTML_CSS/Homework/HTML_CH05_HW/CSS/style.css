@@ -2,23 +2,22 @@
 /* Style rules for mobile viewport */
 
 
- @media screen and (max-width: 767px) {
+ @media screen and (max-width: 767.9px) {
   .hideformobile{
-   display: none;
-   clear: both;
+    display: none;
+    clear: both;
   }
 
   .mobileimgs{
-   
      margin-left: auto;
      margin-right: auto;
      width: 50%;
   }
   nav{
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  padding: 0%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 0%;
 
   }
   nav li{
@@ -77,43 +76,25 @@
   nav li a{
      padding: 1em 2em;
   }
-   .floatleft{
-  width: 45%;
-  float: left;
-  padding: 1%;  
+  .floatleft{
+    width: 45%;
+    float: left;
+    padding: 1%;  
   } 
 
   .floatright{
-  
-  width: 45%; 
-  float: right; 
-
+    width: 45%; 
+    float: right; 
   }
 
   
  }
-/*  .floatforimgs{
-  width: 45%;
-  float: left;
-  padding: 1%;  
-  } 
- .floatforp{
-  
-  width: 45%; 
-  float: right; 
-
- }  */
-
-
-
-
 
 /* Style rules for image */
 img{
   max-width: 100%;
   height: auto;
   display: block;
- 
 }
 
 
@@ -122,8 +103,6 @@ main, nav , footer{
   font-family: "Comic Neue", cursive;
   font-weight: 550; 
   font-style: normal;
- 
-;
 }
 
 /* Style rules for body */
@@ -139,7 +118,6 @@ header{
   font-weight: 400;
   font-style: normal;
   text-align: center;
-  
 }
 
 header h1{
@@ -156,21 +134,17 @@ header img{
 
 /* Style rules for nav */
 nav{
-  
   background-color: #c31c41;
- 
 }
 
 
 nav ul{
   list-style: none;
-  
   text-align: center; 
 }
 
 nav li{
   font-size: 1.85em;
- /*   display: inline-block;  */ 
   font-weight: bold;
   font-style: italic;
 }
@@ -178,7 +152,6 @@ nav li{
 nav li a{
    display: block;
    text-decoration: none;
-  
    color: #9052DA;
  
 
@@ -194,9 +167,7 @@ main{
 
 main h2{
   text-align: center;
-  color: #33042D ;
-  
- 
+  color: #33042D;
 }
 
 main p{
@@ -206,7 +177,6 @@ main p{
 main ul{
   list-style-type: none;
   padding-left: 0%;
- 
 }
 
 main li p{
@@ -222,12 +192,10 @@ main a{
 /* Style rules for footer */
 
 footer{
-
   text-align: center;
   background-color: #5E060F;
   color: #FBBCC2;
   padding: 1.5%;
-
 }
 
 /* Style rules for Classes */
@@ -247,20 +215,4 @@ a:hover{
  #contact{
     text-align: center;
   }
-/*  .floatforimgs{
-  width: 45%;
-  float: left;
-  padding: 1%;
-  
- 
-} 
- 
-
- .floatforp{
-  
-  width: 45%; 
-  float: right; 
-
- 
-}  */
 

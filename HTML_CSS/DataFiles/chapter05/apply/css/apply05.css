@@ -1,4 +1,6 @@
-/* Style sheet created by: Student's First Name Student's Last Name, Today's Date */
+/*  Student Name:Justin Thompson Student's 
+    Today's Date: 09/16/2025
+    File Name: apply05.css */
 
 /* CSS Reset */
 body, header, nav, main, footer, h1, div, img, ul {
@@ -72,9 +74,9 @@ main {
     font-family: "Crimson Text";
 }
 
-.corner{
+ .corner{
     border-radius: 12px;
-}
+} 
 
 #image {
     margin-bottom: 1%;
