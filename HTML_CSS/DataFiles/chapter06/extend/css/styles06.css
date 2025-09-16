@@ -60,6 +60,17 @@ main {
     background: repeating-linear-gradient(#df80ff 10%, #ccffff 20%);
 }
 
+.gradient6{
+    background: linear-gradient(to right, rgba(0,0,153,0) 25%,rgba(0,0,153,1));
+}
+
+.gradient7{
+    background: radial-gradient(#0000ff,#fff,#ff0000);
+}
+
+.gradient8{
+    background: repeating-radial-gradient(#0000ff,#fff,#ff0000 15%);
+}
 /* Style rule for footer */
 footer {
 	font-size: .90em;
