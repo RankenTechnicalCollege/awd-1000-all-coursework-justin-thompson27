@@ -24,7 +24,6 @@ main {
   flex: 1;
 }
 
-
 /* Style rules for mobile viewport  */
 
 /* Hide tab-desk */
@@ -79,14 +78,6 @@ nav ul{
   padding-left: 0%;
   text-align: center; 
 }
-
-/* nav li{
-  display: inline-block;
-  font-size: 1.75em;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
-} */
-
 
 nav li{
   display: block;
@@ -267,10 +258,7 @@ footer a{
       text-align: center;
      }
   
-  /*   #map{
-      width: auto;
-      height: auto;
-    } */
+  
      
 }
 

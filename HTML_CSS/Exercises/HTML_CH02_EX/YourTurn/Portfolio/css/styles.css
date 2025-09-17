@@ -12,6 +12,8 @@ body, header, nav, main, footer, img, h1, h3{
 
 }
 
+
+
 /* Style rules for Mobile */
 
 
@@ -26,7 +28,6 @@ body, header, nav, main, footer, img, h1, h3{
 .centerimgformobile{
    border: 5px solid #6f28b4;
    width: 80%;  
-  /* height: auto;   */
    border-radius: 15px; 
 }
 
@@ -175,6 +176,7 @@ footer{
   
 }
 
+
 /* Media Query for Tablet Viewport */
 
 @media screen and (min-width: 620px) {
@@ -226,10 +228,6 @@ footer{
     text-shadow: 2px 1px 2px #c32bee;
   }
 
-  .centerimgformobile{
-   /*  width: 50%; */
-   /* height: 100%;
-    */
-  }
   
 }
+
