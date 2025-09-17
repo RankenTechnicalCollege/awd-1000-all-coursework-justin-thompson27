@@ -33,7 +33,8 @@ main {
   display: none;
 }
 
-header{
+/* Sticky Nav */
+nav{
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -73,8 +74,9 @@ background-color: #edab55;
 }
 
 nav ul{
-  list-style: none;
+  list-style-type: none;
   margin: 0;
+  padding-left: 0%;
   text-align: center; 
 }
 
@@ -85,18 +87,8 @@ nav ul{
 
 } */
 
-nav li a{
-  display: block;
-  color: #f6eee4;
-  text-align: center;
-  padding: 0.5em 2em;
-  text-decoration: none; 
-}
 
-nav li :first-child{
-  border-top: none;
-}
- nav.mobile li{
+nav li{
   display: block;
   border-top: 1px solid white;
   font-size: 1.75em;
@@ -104,6 +96,17 @@ nav li :first-child{
   
 }
 
+nav ul:first-child{
+  border-top: none;
+}
+
+nav li a{
+  display: block;
+  color: #f6eee4;
+  text-align: center;
+  padding: 0.5em 2em;
+  text-decoration: none; 
+}
 /* Style rules for main content */
 main{
   padding: 1% 2%;
@@ -113,7 +116,7 @@ main{
 
 main p{
   text-align: center;
-  font-size: 2em; 
+  font-size: 1.1em; 
   padding: 1%;
 }
 
@@ -130,6 +133,8 @@ main ul{
     padding: 2% 0%;
     text-align: center;
  }
+
+ /* Style Rules for Classes */
 .important{
   color:#7a5764;
   font-size: 2em;
@@ -141,7 +146,8 @@ main ul{
 .tel-link{
   background-color:  #edab55;
   padding: 2%;
-  
+  margin: 1em auto;
+  width: 80%;
   border-radius: 5px;
 }
 
@@ -153,18 +159,15 @@ main ul{
 .email-link a{
    text-decoration: none;
   color: #f1f0f5;
+  font-size: .85em;
 }
 .centerimg{
   margin-left: auto;
   margin-right: auto;
   border-radius: 5px;
 }
-/* #float{
-    float: right;
-    padding: 1%;
-    
-} */
 
+/* Style rules for id */
 #contact{
   font-size: 1.5em;
   text-align: center;
@@ -204,3 +207,98 @@ footer a{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
    color:   #f1f0f5;
 }
+
+/*Media Query for Tablet Viewport */
+
+  @media screen and (min-width: 620px) {
+  
+    /* Tablet Viewport: Show tab-desk class, hide mobile class */
+    .tab-desk{
+      display: block;
+    }
+
+    .mobile{
+      display: none;
+    }
+
+    /* Tablet style rules for nav */
+    nav li{
+      border-top: none;
+      display: inline-block;
+      font-size: 2em;
+    }
+
+    nav li a{
+      padding: 0.5em;
+    }
+
+    /* Tablet Style rules for main */
+    main {
+      font-size: 1.5em;
+    }
+  }
+/*Media Query for Desktop Viewport */
+
+  @media screen and (min-width: 1000px) {
+
+    /*Desktop Style rules for nav*/
+
+    
+    nav li a{
+      padding: 1.5em;
+    }
+
+    nav li a:hover{
+    color: #31221f;
+    text-shadow: 2px 1px 2px #31221f;
+    }
+
+   /*Style Rules for main */
+     main h3{
+      text-align: center;
+     }
+  
+}
+
+
+/* Media Query for Large Desktop Viewports*/
+ @media screen and (min-width: 1921px) {
+   
+    /* Style Rules for Body */
+  
+    body{
+      background: linear-gradient(#ae876a,#edab55);
+    }
+    #wrapper{
+      width:1920px;
+      margin: 0 auto;
+    }
+    /* Style Rules for header */
+    header{
+      font-size: 2em;
+    }
+    /* Style Rules for Main */
+    main{
+      background-color:#ae876a;
+    }
+    /* Style rules for Column */
+    #prices, #hairlength{
+      width: 45%;
+      float: left;
+      margin: 0 2%;
+    }
+
+    /* Style rules for footer */
+    footer{
+      clear: left;
+    }
+ }
+
+/* Media Query for Print */
+ @media Print {
+  body{
+    background-color: white;
+    color: black;
+  }
+}
+
