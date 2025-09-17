@@ -15,17 +15,19 @@ body, header, nav, main, footer, img, h1, h3{
 /* Style rules for Mobile */
 
 
+/*Hide tab-desk*/
+.tab-desk{
+  display: none;
+}
+
 /* Style rules for mobile nav */
 
 /* Style rules for mobile classes */
 .centerimgformobile{
- /*  margin-left: auto;
-  margin-right: auto;  */
    border: 5px solid #6f28b4;
-   width: 95%;
-   height: 50%;
+   width: 80%;  
+   height: auto; 
    border-radius: 15px; 
-
 }
 
 .centerformobile ul{
@@ -142,19 +144,24 @@ main ul{
   padding-top: 2%;
   text-decoration: none;
   display: block;
-  font-family: "Press Start 2P", system-ui;
   font-weight: 300;
-  font-style: normal;
 }
 .center{
   text-align: center;
 } 
 
+.gamertext{
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 0.85em;
+}
 #projects > ul >li{
   display: block;
   padding: 0.3em 0em;
  
 }
+
 
 
 /* Style rules for footer content */
@@ -166,3 +173,50 @@ footer{
   
 }
 
+/* Media Query for Tablet Viewport */
+
+@media screen and (min-width: 620px) {
+  
+  /* Tablet Viewport: Show tab-desk class, hide mobile class */
+  .tab-desk{
+    display: block;
+  }
+
+  .mobile{
+    display: none;
+  }
+
+  /* Tablet Nav Area Style rules  */
+  nav li{
+    border-top: none;
+    display: inline-block;
+    font-size: 2em;
+  }
+
+  nav li a{
+    padding: 0.5em;
+  }
+
+  main {
+    font-size: 1.5em;
+  }
+}
+
+/* Media Query for Desktop Viewport */
+
+@media screen and (min-width: 1000px) {
+
+  /*Desktop Style rules for nav*/
+
+  nav li a{
+    padding: 1.5em 1em;
+  }
+
+  nav li a:hover{
+    color: #c32bee;
+    text-shadow: 2px 1px 2px #c32bee;
+  }
+
+  
+  
+}
