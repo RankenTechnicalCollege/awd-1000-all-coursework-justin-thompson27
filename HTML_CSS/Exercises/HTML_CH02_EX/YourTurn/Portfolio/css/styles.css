@@ -30,17 +30,9 @@ body, header, nav, main, footer, img, h1, h3{
    border-radius: 15px; 
 }
 
-.centerformobile ul{
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 0%;
-  padding-right: 0%;
-}
 
-.centerformobile{
-  text-align: center;
- 
-}
+
+
 /* Style rules for body and images */
 html, body{
   background-color: #34c230;
@@ -98,7 +90,7 @@ nav li a{
   color: #f6eee4;
   padding: 0.5em 1em;
   text-decoration: none;  
-   display: block;
+  display: block;
    
 
 }
@@ -139,6 +131,7 @@ main ul{
   margin: auto;
   width: 70%;
 }
+
 .tel-link a{
   color: #f6eee4;
   font-size: .85em;
@@ -151,12 +144,20 @@ main ul{
   text-align: center;
 } 
 
+.center ul{
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0%;
+  padding-right: 0%;
+}
+
 .gamertext{
   font-family: "Press Start 2P", system-ui;
   font-weight: 200;
   font-style: normal;
   font-size: 0.85em;
 }
+
 #projects > ul >li{
   display: block;
   padding: 0.3em 0em;
