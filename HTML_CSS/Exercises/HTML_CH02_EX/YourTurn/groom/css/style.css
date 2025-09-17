@@ -123,15 +123,22 @@ main p{
 main h3{
   font-size: 1.5em;
   padding: .2% 0%;
+  text-align: center;
 }
 
-main ul{
+main dl{
    list-style-type: none;
 }
+
  main dt{
     font-size: 2em;
     padding: 2% 0%;
     text-align: center;
+ }
+
+ main dd{
+  margin-left: auto;
+  margin-right: auto;
  }
 
  /* Style Rules for Classes */
@@ -189,7 +196,9 @@ main ul{
 #map{
   border: 5px solid #31221f;
   border-radius: 5px;
-  width: 95%;
+  width: 95%; 
+  
+ 
 }
 
 
@@ -258,6 +267,11 @@ footer a{
       text-align: center;
      }
   
+  /*   #map{
+      width: auto;
+      height: auto;
+    } */
+     
 }
 
 
