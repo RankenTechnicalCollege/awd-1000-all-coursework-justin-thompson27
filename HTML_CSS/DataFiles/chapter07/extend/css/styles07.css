@@ -1,7 +1,7 @@
 /*
-Author:
-Date:
-File Name: 
+Author:Justin Thompson
+Date: 9/17/2025
+File Name: style07.css
 */
 
 /* CSS Reset */
@@ -29,6 +29,9 @@ header {
 /* Style rules for main content  */
 main {
 	background-color: #fff;
+	column-count: 3; 
+    column-gap: 30px; 
+	
 }
 
 aside {
