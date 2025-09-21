@@ -142,8 +142,8 @@ main dl{
     text-align: center;
     font-size: 1.5em;
     font-weight: bold;
-    color: #373684;
-    text-shadow: 3px 3px 10px #8280cb;
+    color: #f1f0f5;
+    text-shadow: 5px 5px 5px #31221f;
 }
 
 /* Style rules for figure and figcaption */
@@ -152,13 +152,13 @@ figure{
     position: relative;
     max-width: 275px;
     margin: 2% auto;
-    border: 8px solid #373684;
+    border: 8px solid #edab55;
 }
 
 figcaption{
     position: absolute;
     bottom: 0;
-    background: rgba(55, 54, 132, 0.7);
+    background: rgba(237, 171, 85, 1);
     color: #fff;
     width: 100%;
     padding: 5% 0;
@@ -275,6 +275,7 @@ footer a{
 
      /* Style rules for Grid */
     .grid{
+      flex: none;
         display: grid;
         grid-template-columns: auto auto auto;
         grid-gap: 30px;
