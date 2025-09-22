@@ -1,0 +1,69 @@
+/*
+Author: Justin Thompson
+Date: 09/22/2025
+File Name: apply08.css
+*/
+
+/* CSS Reset */
+body, main, footer, table {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Style rule for body */
+body {
+	background-color: #ffe5dc;
+  font-family: sans-serif;
+}
+
+/* Style rules for table elemnets */
+
+caption{
+	font-size: 2em;
+	padding: 2%;
+	margin-top: 2%;
+  color: #a22c02;
+  font-weight: bold;
+}
+
+table{
+  width: 80%;
+  margin: 0 auto;
+	border: 5px solid #fd4d0c;
+  box-shadow: 10px 10px 15px #792101;
+}
+
+table,tr,th,td{
+	border-collapse: collapse;
+	padding: 2%;
+}
+
+thead{
+ color: white;
+ background-color: #792101;
+ 
+}
+tbody tr:nth-child(odd){
+	background-color: #fe9772;
+}
+
+th , td{
+	border: 1px solid #a22c02;
+}
+
+td{
+	text-align: center;
+}
+
+ 
+
+
+
+/* Style for the footer element */
+footer {
+  font-size: .90em;
+	margin: 2% auto;
+  padding-top: 2%;
+	text-align: center;
+}
