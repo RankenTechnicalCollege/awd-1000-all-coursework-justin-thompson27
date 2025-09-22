@@ -5,7 +5,7 @@
 */
 
 /* CSS Reset */
-body, header, nav, main, footer, img, h1, h3{
+body, header, nav, main, footer, img, h1, h3, figure, figcaption{
   margin: 0;
   padding: 0;
   border: 0;
@@ -118,6 +118,35 @@ main ul{
    list-style-type: none;
 }
 
+
+/* Style rules for aside */
+ aside{
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #f1f0f5;
+    text-shadow: 5px 5px 5px #6f28b4;
+}
+
+/* Figure Style rules */
+.content img{
+  max-width: 100%;
+  height: auto;
+}
+
+.content figure {
+    margin: 2% 1%; 
+}
+
+.content figcaption {
+    bottom: 0;
+    width: 100%;
+    padding: 5% 0.5%;
+    text-align: center;
+    font-size: 1.2em;  
+}
+
+/* Style rules for classes */
 .link{
   color:#f6eee4;
   text-decoration: none;
@@ -211,7 +240,22 @@ footer{
     font-size: 1.5em;
   }
 
-}
+   /* Style rules for Grid */
+    .grid{
+     
+        display: grid;
+        grid-template-columns: auto auto ;
+        grid-gap: 30px;
+    }
+
+    aside{
+        grid-column: 1 /span 2;
+    }
+
+    
+  }
+
+
 
 /* Media Query for Desktop Viewport */
 
@@ -227,7 +271,8 @@ footer{
     color: #c32bee;
     text-shadow: 2px 1px 2px #c32bee;
   }
-
+  
+  
   
 }
 
