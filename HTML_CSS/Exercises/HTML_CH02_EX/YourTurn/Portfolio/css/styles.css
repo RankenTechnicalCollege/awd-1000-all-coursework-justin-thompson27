@@ -130,7 +130,7 @@ main ul{
 
 /* Figure Style rules */
 .content img{
-  max-width: 100%;
+  max-width: 70%;
   height: auto;
 }
 
@@ -240,17 +240,17 @@ footer{
     font-size: 1.5em;
   }
 
-   /* Style rules for Grid */
-    .grid{
-     
-        display: grid;
-        grid-template-columns: auto auto ;
-        grid-gap: 30px;
-    }
+  /* Style rules for Grid */
+  .grid{
+    
+      display: grid;
+      grid-template-columns: auto auto ;
+      grid-gap: 30px;
+  }
 
-    aside{
-        grid-column: 1 /span 2;
-    }
+  aside{
+      grid-column: 1 /span 2;
+  }
 
     
   }
