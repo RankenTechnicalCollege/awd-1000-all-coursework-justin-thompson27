@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<!-- Student's Name, Today's Date -->
+<!-- Author: Justin Thompson
+Date: 09/22/2025
+File Name: analyze08.html -->
 <html lang="en">
 <head>
 	<title>Form Example</title>
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles08.css">
 </head>
 <body>
 
@@ -13,13 +16,58 @@
         <!-- Use the main area to add the main content of the webpage -->
         <main>
 
-<form class="grid"><input type="text" name="fName" id="fName"><input type="text" name="lName" id="lName"><input type="email" name="email" id="email"><input type="tel" name="phone" id="phone"><input type="text" name="cName" id="cName"><input type="number" name="cNum" id="cNum"><input type="text" name="expDate" id="expDate" placeholder="MM/YY"><input type="number" name="ccv" id="ccv"></form>
+<form class="grid">
+
+
+    <fieldset>
+
+     <legend> Customer Information</legend>
+    
+        <label for="fName"> First Name</label>
+        <input type="text" name="fName" id="fName">
+
+        
+        <label for="lName"> Last Name</label>
+        <input type="text" name="lName" id="lName">
+
+        <label for="email"> Email</label>
+        <input type="email" name="email" id="email">
+
+        
+        <label for="phone"> Phone Number</label>
+        <input type="tel" name="phone" id="phone">
+
+    </fieldset>
+   
+    <fieldset>
+
+        <legend>Payment Information</legend>
+    
+    <label for="cName"> Card Name</label>
+    <input type="text" name="cName" id="cName">
+
+    <label for="cNum"> Card Number</label>
+    <input type="number" name="cNum" id="cNum">
+
+    <label for="expDate"> Expiration Date</label>
+    <input type="text" name="expDate" id="expDate" placeholder="MM/YY">
+    
+    <label for="ccv">CCV</label>
+    <input type="number" name="ccv" id="ccv">
+
+
+    </fieldset>
+    
+    <input type="submit" id="submit" value="Submit" class="btn">
+   
+
+</form>
 
 </main>
 
 <!-- Use the footer area to add webpage footer content -->
 <footer>
-    <p>Student's Name, Today's Date</p>
+    <p>Justin Thompson, 09/22/2025</p>
 </footer>
 
 	</div>
