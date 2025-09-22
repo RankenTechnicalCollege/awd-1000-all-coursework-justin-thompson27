@@ -1,7 +1,7 @@
 /*
-Author:
-Date:
-File Name: 
+Author: Justin Thompson
+Date: 09/22/2025
+File Name: apply08.css
 */
 
 /* CSS Reset */
@@ -16,6 +16,35 @@ body {
 	background-color: #f4f9e1;
 }
 
+/* Style rules for table elemnets */
+table{
+	width: 80%;
+	margin: 0 auto;
+	border: 3px solid #71881b;
+}
+
+table,tr,th,td{
+	border-collapse: collapse;
+	padding: 2%;
+}
+
+caption{
+	font-size: 2em;
+	padding: 2%;
+	margin-top: 2%;
+}
+
+th , td{
+	border: 1px solid #7188bb;
+}
+
+td{
+	text-align: center;
+}
+
+tr:nth-child(odd){
+	background-color: #d3e788;
+}
 /* Style rule for the container */
 #container {
 	width: 80%;
