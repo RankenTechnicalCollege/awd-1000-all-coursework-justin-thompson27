@@ -137,7 +137,7 @@ figcaption{
     border-radius: 8px;
 }
 
-#contact{
+#contact, #rental h2{
     text-align: center;
 }
 
@@ -168,6 +168,35 @@ figcaption{
     height: 50%;
 }
 
+/* Style rules for table */
+
+table{
+    border: 1px solid #373684;
+    border-collapse: collapse;
+    margin: 0 auto;
+    width: 100%;
+}
+
+caption{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 1%;
+}
+
+th,td{
+    border: 1px solid #373684;
+    padding: 2%;
+}
+
+th{
+    background-color: #373684;
+    color: #fff;
+    font-size: 1.15em;
+}
+
+tr:nth-child(odd){
+    background-color: #b7b7e1;
+}
 /* Style rules for footer content */
 footer{
    text-align: center;
@@ -269,6 +298,13 @@ footer a{
      /* Style rules for figures and figcaption */
      figcaption{
         font-size: 1em;
+     }
+
+
+     /* Desktop Viewport: Style Rules for table */
+     table{
+        width: 70%;
+
      }
 }
 
