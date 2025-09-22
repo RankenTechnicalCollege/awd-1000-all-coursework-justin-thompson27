@@ -275,7 +275,7 @@ footer a{
 
      /* Style rules for Grid */
     .grid{
-      flex: none;
+        flex: none;
         display: grid;
         grid-template-columns: auto auto auto;
         grid-gap: 30px;

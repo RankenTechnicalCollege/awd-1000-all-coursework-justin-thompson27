@@ -182,7 +182,7 @@ footer a{
   text-decoration: none;
 }
 
-/* Media Quert for Tablet Viewport */
+/* Media Query for Tablet Viewport */
 @media screen  and (min-width: 620px) , print {
 
   /* Tablet Viewport: Show tab-desk class, hide mobile class */

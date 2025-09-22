@@ -23,19 +23,19 @@ header {
 	background-color: #628c45;
 	color: #dfe7c4;
 	padding: 2%;
-    text-align: center;
+  text-align: center;
 }
 
 /* Style rules for main content  */
 main {
 	background-color: #fff;
 	column-count: 3; 
-    column-gap: 30px; 
+  column-gap: 30px; 
 	
 }
 
 aside {
-    padding: 2%;
+  padding: 2%;
 }
 
 footer {
