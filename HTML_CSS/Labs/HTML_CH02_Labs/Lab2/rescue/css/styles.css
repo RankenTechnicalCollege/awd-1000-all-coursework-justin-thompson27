@@ -28,7 +28,7 @@ img{
 
 /* Style rules to show mobile class and hide tab-desk class*/
 
-.mobile{
+.mobile , .mobile-tablet{
   display: block;
 }
 
@@ -40,7 +40,7 @@ nav{
   background-color: #ae876a;
    
 }
-.tab-desk{
+.tab-desk , .desktop{
  display: none;  
 }
 
@@ -216,6 +216,16 @@ footer a{
 
 /* Media Query for Desktop Viewport */
 @media screen and (min-width: 1000px), print {
+
+  /* Desktop Viewport: Show desktop class, hide mobile-tablet class */
+
+  .desktop{
+    display: block;
+  }
+
+  .mobile-tablet{
+    display: none;
+  }
   
   /* Desktop Viewport: Style rules for nav area */
   nav li{
@@ -245,6 +255,32 @@ footer a{
   aside{
     grid-column: 1 / span 3;
     font-size: 2em;
+  }
+
+
+  /* Style rules for table */
+  table{
+    border: 1px solid #2a1f14;
+    border-collapse: collapse;
+    margin: 0 auto;
+  }
+  caption{
+    font-size: 1.5;
+    font-weight: bold;
+    padding: 1%;
+  }
+  th, td{
+    border: 1px solid #2a1f14;
+    padding: 1%;
+  }
+  th{
+    background-color: #2a1f14;
+    color: white;
+    font-size: 1.15em;
+  }
+
+  tr:nth-child(odd){
+    background-color: #deccba;
   }
 }
 
