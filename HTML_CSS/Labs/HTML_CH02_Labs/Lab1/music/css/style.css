@@ -197,6 +197,34 @@ th{
 tr:nth-child(odd){
     background-color: #b7b7e1;
 }
+
+
+
+/* Style Rules for form elements */
+
+fieldset , input{
+    margin-bottom: 2%;
+
+}
+
+fieldset legend{
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+label{
+    display: block;
+    padding-top: 3%;
+}
+
+#submit{
+    margin: 0% auto;
+    display: block;
+    padding: 3%;
+    background-color: #b7b7e1;
+    font-size: 1em;
+}
+
 /* Style rules for footer content */
 footer{
    text-align: center;
@@ -241,6 +269,11 @@ footer a{
         padding: 0.25em 0.5em;
     }
 
+    /* Tablet Viewport: style rules for map */
+    .map{
+        width: 500px;
+        height: 450px;
+    }
     /* Style rules for Grid */
     .grid{
         display: grid;
@@ -251,6 +284,14 @@ footer a{
     aside{
         grid-column: 1 /span 2;
     }
+
+    /* Tablet Viewport: Style rule for form element */
+    form{
+        width: 70%;
+        margin: 0 auto;
+
+    }
+    
 }
 
 /* Media Query for Desktop Viewport */
@@ -287,25 +328,37 @@ footer a{
     }
 
     /* Style rules for grid */
-     .grid{
+    .grid{
         grid-template-columns: auto auto auto auto;
      }
 
-     aside{
+    aside{
         grid-column: 1/ span 4;
      }
 
-     /* Style rules for figures and figcaption */
-     figcaption{
+    /* Style rules for figures and figcaption */
+    figcaption{
         font-size: 1em;
      }
 
 
-     /* Desktop Viewport: Style Rules for table */
-     table{
+    /* Desktop Viewport: Style Rules for table */
+    table{
         width: 70%;
 
      }
+
+    /* Desktop Viewport Style rules for form elements */
+    .form-grid{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 20px;
+     }
+
+    .btn{
+        grid-column: 1 / span 2;
+     }
+   
 }
 
 /* Media Query for Print */
