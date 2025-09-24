@@ -125,3 +125,10 @@ main p{
 
 /* Footer Styles */
 
+footer{
+  background-color: #2d170e;
+  padding: 3%;
+  text-align: center;
+  color: azure;
+}
+
