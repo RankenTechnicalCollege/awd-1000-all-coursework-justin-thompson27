@@ -1,0 +1,50 @@
+/*
+Author: Justin Thompson
+Date: 09/24/2025
+File Name: style1.css
+*/
+
+
+/* CSS Reset */
+body, main, footer, table {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+/* Style rules for body */
+
+body{
+  background-color: #ffffff;
+}
+
+
+/* Style rules for table */
+table{
+	width: 50%;
+	margin: 0 auto;
+	border: 2px solid #363636;
+}
+
+table,tr,th,td{
+	border-collapse: collapse;
+  padding: 1%;
+	
+}
+
+/* Style rules for table children */
+
+th , td{
+	border: 2px solid #363636;
+  text-align: left;
+
+}
+
+td:nth-child(3) {
+  text-align: right;
+}
+
+tr:nth-child(odd){
+	background-color: #ffff00;
+}
