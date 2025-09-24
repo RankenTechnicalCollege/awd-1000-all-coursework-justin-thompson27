@@ -151,7 +151,7 @@ figcaption{
   margin-left: 10%;
 }
 
-#contact
+#contact , #form h2
 {
   text-align: center;
 }
@@ -167,6 +167,31 @@ figcaption{
   color: #f6eee4;
   text-decoration: none;
   font-weight: bold;
+}
+
+/* Style rules for form elements */
+fieldset, input, textarea{
+  margin-bottom: 2%;
+}
+
+fieldset legend{
+  font-weight: bold;
+  font-size: 1.25em;
+}
+
+label{
+  display: block;
+  padding-top: 2%;
+}
+
+#submit{
+  margin: 0 auto;
+  display: block;
+  padding: 2%;
+  background-color: #78593a;
+  color: #f6eee4;
+  font-size: 1.25em;
+  border-radius: 10px;
 }
 
 /* Style rules for footer content */
@@ -211,6 +236,11 @@ footer a{
 
   aside{
      grid-column: 1 /span 2;
+  }
+  
+  form{
+    width: 70%;
+    margin: 0 auto;
   }
 }
 
@@ -264,15 +294,18 @@ footer a{
     border-collapse: collapse;
     margin: 0 auto;
   }
+
   caption{
-    font-size: 1.5;
+    font-size: 1.5em;
     font-weight: bold;
     padding: 1%;
   }
+
   th, td{
     border: 1px solid #2a1f14;
     padding: 1%;
   }
+  
   th{
     background-color: #2a1f14;
     color: white;
@@ -281,6 +314,22 @@ footer a{
 
   tr:nth-child(odd){
     background-color: #deccba;
+  }
+
+
+  /* Desktop Viewport: Style rules for form elements */
+  form{
+    width: auto;
+  }
+  .form-grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+  }
+
+  .btn{
+    grid-column: 1 / span 2
+    ;
   }
 }
 
