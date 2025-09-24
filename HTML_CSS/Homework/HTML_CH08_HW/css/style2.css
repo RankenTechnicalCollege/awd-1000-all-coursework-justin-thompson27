@@ -6,7 +6,7 @@ File Name: style2.css
 
 
 /* CSS Reset */
-body, main, footer, table {
+body, main, table {
     margin: 0;
     padding: 0;
     border: 0;
