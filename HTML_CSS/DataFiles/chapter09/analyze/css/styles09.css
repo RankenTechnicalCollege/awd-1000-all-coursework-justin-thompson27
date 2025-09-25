@@ -1,7 +1,7 @@
 /*
-    Student Name
-	File Name: 
-	Current Date: 
+  Student Name: Justin Thompson
+	File Name: styles09.css 
+	Current Date: 09/25/2025
 */
 
 /* Style rule for body specifies a background color */
@@ -64,7 +64,9 @@ video {
 	border: 0.5em double #0419B8;
 	border-radius: 3em;
 }
-
+/* img{
+	width: 50%;
+} */
 /* Style for the footer element */
 footer {
 	font-size: .80em;
