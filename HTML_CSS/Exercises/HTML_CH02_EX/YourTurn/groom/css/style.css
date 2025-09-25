@@ -5,7 +5,7 @@
 */
 
 /* CSS Reset */
-body, header, nav, main, footer, img, h1, h2,h3,aside,section , figure , figcaption{
+body, header, nav, main, footer, img, h1, h2,h3,aside,section , figure , figcaption, video{
   margin: 0;
   padding: 0;
   border: 0;
