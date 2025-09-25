@@ -33,7 +33,7 @@ main {
 
 /* Hide tab-desk */
 
-.tab-desk{
+.tab-desk , .desktop{
   display: none;
 }
 
@@ -167,6 +167,32 @@ figcaption{
     font-weight: bold;
 }
 
+
+
+/* Style rules for form elements */
+fieldset, input, textarea{
+  margin-bottom: 2%;
+}
+
+fieldset legend{
+  font-weight: bold;
+  font-size: 1.25em;
+}
+
+label{
+  display: block;
+  padding-top: 2%;
+}
+
+#submit{
+  margin: 0 auto;
+  display: block;
+  padding: 2%;
+  background-color: #31221f;
+  color: #f6eee4;
+  font-size: 1.25em;
+  border-radius: 10px;
+}
  /* Style Rules for Classes */
 .important{
   color:#7a5764;
@@ -248,7 +274,7 @@ footer a{
   @media screen and (min-width: 620px) {
   
     /* Tablet Viewport: Show tab-desk class, hide mobile class */
-    .tab-desk{
+    .tab-desk ,.mobile-tablet{
       display: block;
     }
 
@@ -285,11 +311,28 @@ footer a{
         grid-column: 1 /span 3;
     }
 
+    .form h2{
+      text-align: center;
+    }
+     
+    form{
+      width: 70%;
+      margin: 0 auto;
+    }
     
   }
 /*Media Query for Desktop Viewport */
 
   @media screen and (min-width: 1000px) {
+
+    /* Display Desktop hide mobile/tablet */
+    .desktop{
+    display: block;
+    }
+
+    .mobile-tablet{
+      display: none;
+    }
 
     /*Desktop Style rules for nav*/
 
@@ -311,8 +354,48 @@ footer a{
      figcaption{
         font-size: 1em;
      }
+  /* Style rules for table elements */
+    table{
+    border: 1px solid #7a5764;
+    border-collapse: collapse;
+    margin: 0 auto;
+  }
+
+  caption{
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 3%;
+  }
+
+  th, td{
+    border: 2px solid #f6eee4;
+    padding: 1%;
+  }
   
-     
+  th{
+    background-color: #edab55;
+    color: white;
+    font-size: 1.15em;
+  }
+
+  tr:nth-child(odd){
+    background-color: #edab55;
+  }
+  
+
+   /* Desktop Viewport: Style rules for form elements */
+  form{
+    width: auto;
+  }
+  .form-grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+  }
+
+  .btn{
+    grid-column: 1 / span 2;
+  }
 }
 
 
