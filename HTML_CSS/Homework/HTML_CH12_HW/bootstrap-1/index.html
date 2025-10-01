@@ -6,10 +6,10 @@
   <title>Document</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
-<body>
-    <form id="order-form" action="/order" method="post">
-      <fieldset>
-        <legend> Contact Information</legend>
+<body class="bg-light text-dark" >
+    <form class="w-75 mx-auto d-block d-md-flex justify-content-evenly" id="order-form" action="/order" method="post">
+      <fieldset class="d-block" >
+        <legend > Contact Information</legend>
 
           <label class="form-label" for="given-name">First Name:</label>
           <input class="form-control" type="text" id="given-name" name="given-name" autocomplete="given-name" required>
@@ -26,7 +26,7 @@
           <label class="form-label" for="confirm-email">Confirm Email:</label>
           <input class="form-control" type="email" id="confirm-email" name="confirm-email" autocomplete="email" required>
       </fieldset>
-      <fieldset>
+      <fieldset class="d-block">
         <legend>Account Credentials</legend>
           <label class="form-label" for="password">Password:</label>
           <input class="form-control" type="password" id="password" name="password" autocomplete="current-password" required>
@@ -35,7 +35,7 @@
           <input class="form-control" type="password" id="confirm-password" name="confirm-password" autocomplete="current-password" required>
 
       </fieldset>
-      <fieldset>
+      <fieldset class="d-block" >
         <legend>Payment Information</legend>
          <label class="form-label" for="credit-card-number">Credit Card Number</label>
          <input class="form-control" type="text" id="credit-card-number" name="credit-card-number" autocomplete="cc-number" required>
@@ -46,7 +46,7 @@
          <label class="form-label" for="CSC">CSC:</label>
          <input class="form-control" type="text" name="CSC" id="CSC" autocomplete="cc-csc" required >
       </fieldset>
-      <fieldset>
+      <fieldset class="d-block">
         <legend>Billing Address</legend>
           <label class="form-label" for="street-address">Street Address:</label>
           <input class="form-control" type="text" name="street-address" id="street-address" autocomplete="address-line1" required>
@@ -58,20 +58,20 @@
           <input class="form-control" type="text" name="city" id="city" autocomplete="address-level2" required>
           
           <label class="form-label" for="state">State:</label>
-          <select class="form-control"  name="state" id="state" autocomplete="address-line3" value="" required>
-            <option>MO</option>
-            <option>IL</option>
+          <select class="form-control"  name="state" id="state" autocomplete="address-line3"  required>
+            <option value="">MO</option>
+            <option value="">IL</option>
           </select>
         
           <label class="form-label" for="zipcode">Zip Code:</label>
           <input class="form-control" type="text" name="zipcode" id="zipcode" autocomplete="postal-code" required>
         </fieldset>
-        <fieldset>
+        <fieldset class="d-block">
         <legend>Shipping Address</legend>
 
-          <p>Same as billing address?</p>
-          <label for="yes"><input type="checkbox"  id="yes" name="yesorno" value="yes">yes</label>
-          <label for="no"><input type="checkbox"  id="no" name="yesorno" value="no">no</label>
+          <label class="form-label" for="samesas">Same as billing address?</label>
+          <input class="form-control" type="checkbox"  id="samesas" name="samesas" value="yes">
+         
         
           <label class="form-label" for="billing-address">Street Address:</label>
           <input class="form-control" type="text" name="billing-address" id="billing-address" autocomplete="address-line1" required>
@@ -81,33 +81,18 @@
 
           <label class="form-label" for="billing-city">City:</label>
           <input class="form-control" type="text" name="billing-city" id="billing-city" autocomplete="address-level2" required>
-          
+
           <label class="form-label" for="state">State:</label>
           <select class="form-select"  name="billing-state" id="billing-state" autocomplete="address-line3" required>
-            <option >MO</option>
-            <option >IL</option>            
+            <option value="">MO</option>
+            <option value="">IL</option>
           </select>
-        
+
           <label class="form-label" for="zipcode">Zip Code:</label>
           <input class="form-control" type="text" name="billing-zipcode" id="billing-zipcode" autocomplete="postal-code" required>
         </fieldset>
 
-
-        <button type="button" class="btn btn-primary btn-lg">Submit</button>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        <button type="button" class="d-block align-self-end my-3 mx-auto btn-primary btn-lg">Submit</button>
     </form>
 
 
