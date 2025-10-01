@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <form id="order-form" action="/order" method="post">
+      <fieldset>
+        <legend> Contact Information</legend>
+
+          <label class="form-label" for="given-name">First Name:</label>
+          <input class="form-control" type="text" id="given-name" name="given-name" autocomplete="given-name" required>
+
+          <label class="form-label" for="family-name">Last Name:</label>
+          <input class="form-control" type="text" id="family-name" name="family-name" autocomplete="family-name" required>
+
+          <label class="form-label" for="tel">Phone Number:</label>
+          <input class="form-control" type="tel" id="tel" name="tel" autocomplete="tel" required>
+
+          <label class="form-label" for="email">Email:</label>
+          <input class="form-control" type="email" id="email" name="email" autocomplete="email" required>
+
+          <label class="form-label" for="confirm-email">Confirm Email:</label>
+          <input class="form-control" type="email" id="confirm-email" name="confirm-email" autocomplete="email" required>
+      </fieldset>
+      <fieldset>
+        <legend>Account Credentials</legend>
+          <label class="form-label" for="password">Password:</label>
+          <input class="form-control" type="password" id="password" name="password" autocomplete="current-password" required>
+
+          <label class="form-label" for="confirm-password">Confirm Password:</label>
+          <input class="form-control" type="password" id="confirm-password" name="confirm-password" autocomplete="current-password" required>
+
+      </fieldset>
+      <fieldset>
+        <legend>Payment Information</legend>
+         <label class="form-label" for="credit-card-number">Credit Card Number</label>
+         <input class="form-control" type="text" id="credit-card-number" name="credit-card-number" autocomplete="cc-number" required>
+         
+         <label class="form-label" for="expiration-date">Expiration Date:</label>
+         <input class="form-control" type="month" name="expiration-date" id="expiration-date" autocomplete="cc-exp" required>
+
+         <label class="form-label" for="CSC">CSC:</label>
+         <input class="form-control" type="text" name="CSC" id="CSC" autocomplete="cc-csc" required >
+      </fieldset>
+      <fieldset>
+        <legend>Billing Address</legend>
+          <label class="form-label" for="street-address">Street Address:</label>
+          <input class="form-control" type="text" name="street-address" id="street-address" autocomplete="address-line1" required>
+          
+          <label class="form-label" for="address-line2">Address Line 2:</label>
+          <input class="form-control" type="text" name="address-line2" id="address-line2" autocomplete="address-line2" required>
+
+          <label class="form-label" for="city">City:</label>
+          <input class="form-control" type="text" name="city" id="city" autocomplete="address-level2" required>
+          
+          <label class="form-label" for="state">State:</label>
+          <select class="form-control"  name="state" id="state" autocomplete="address-line3" value="" required>
+            <option>MO</option>
+            <option>IL</option>
+          </select>
+        
+          <label class="form-label" for="zipcode">Zip Code:</label>
+          <input class="form-control" type="text" name="zipcode" id="zipcode" autocomplete="postal-code" required>
+        </fieldset>
+        <fieldset>
+        <legend>Shipping Address</legend>
+
+          <p>Same as billing address?</p>
+          <label for="yes"><input type="checkbox"  id="yes" name="yesorno" value="yes">yes</label>
+          <label for="no"><input type="checkbox"  id="no" name="yesorno" value="no">no</label>
+        
+          <label class="form-label" for="billing-address">Street Address:</label>
+          <input class="form-control" type="text" name="billing-address" id="billing-address" autocomplete="address-line1" required>
+          
+          <label class="form-label" for="billing-address-line2">Address Line 2:</label>
+          <input class="form-control" type="text" name="billing-address-line2" id="billing-address-line2" autocomplete="address-line2" required>
+
+          <label class="form-label" for="billing-city">City:</label>
+          <input class="form-control" type="text" name="billing-city" id="billing-city" autocomplete="address-level2" required>
+          
+          <label class="form-label" for="state">State:</label>
+          <select class="form-select"  name="billing-state" id="billing-state" autocomplete="address-line3" required>
+            <option >MO</option>
+            <option >IL</option>            
+          </select>
+        
+          <label class="form-label" for="zipcode">Zip Code:</label>
+          <input class="form-control" type="text" name="billing-zipcode" id="billing-zipcode" autocomplete="postal-code" required>
+        </fieldset>
+
+
+        <button type="button" class="btn btn-primary btn-lg">Submit</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </form>
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
