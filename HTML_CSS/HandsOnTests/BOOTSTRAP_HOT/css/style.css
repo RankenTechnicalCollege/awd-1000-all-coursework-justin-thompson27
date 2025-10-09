@@ -1,11 +1,19 @@
 .hero{
-  background-image: linear-gradient(rgba(255,255,255,0.7),rgba(255,255,255,0.7)),url();
+  background-image: linear-gradient(rgba(255,255,255,0.7),rgba(255,255,255,0.7)),url('../images/Card_Capital_2_from_outside.png');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: left;
+  background-position: center center;
 }
 
 
 .welcome{
   margin-top: 10%;
+}
+
+.text-shadow{
+   text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.remove-underline{
+  text-decoration: none;
 }
