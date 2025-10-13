@@ -1,7 +1,7 @@
 /*
-    Student Name
-	File Name: 
-	Current Date: 
+    Student Name Justin Thompson
+	File Name: 10/13/25
+	Current Date: apply10.css
 */
 
 /* CSS reset */
@@ -54,7 +54,27 @@ button {
     height: 200px;
     background-color: #33091b;
     margin-left: 6%;
+		animation-name: color;
+		animation-duration: 5s;
 }
+
+.square:hover{
+	transform: translate(80px);
+
+}
+/* Animation */
+ @-webkit-keyframes color{
+
+	from{ background-color: #fbdae9;}
+	to {background-color: #660b32;}
+}
+@keyframes color{
+
+	from{ background-color: #fbdae9;}
+	to {background-color: #660b32;}
+}
+
+
 
 /* Style rules for the footer */
 footer {
