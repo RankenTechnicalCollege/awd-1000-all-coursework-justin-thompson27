@@ -18,7 +18,7 @@ body, header, nav, main, footer, img, h1, h3, figure, figcaption{
 
 
 /*Hide tab-desk*/
-.tab-desk , .desktop{
+.tab-desk , .desktop {
   display: none;
 }
 
@@ -68,34 +68,27 @@ nav{
 background-color: #6f28b4;
 }
 
-nav ul{
-  list-style-type: none;
-  text-align: center;
-  padding: 0;
-  margin: 0%;
+.mobile-nav a{
+    color: #f6eee4;
+    text-align: center;
+    font-size: 2em;
+    text-decoration: none;
+    padding: 3%;
+    display: block;
 }
 
-
-nav li{
-  display: block;
-  font-size: 1.25em;
-  font-family: 'Times New Roman', Times, serif;
-  border-top: 1px solid #f6eee4;
-    
-}
-nav li:first-child{
-  border-top: none;
+.mobile-nav a.menu-icon{
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 
-nav li a{
-  color: #f6eee4;
-  padding: 0.5em 1em;
-  text-decoration: none;  
-  display: block;
-   
-
+.menu-icon div{
+    height: 50px;
+    width: 50px;
+    background-color: #373684;
 }
-
 /* Style rules for main content */
 main{
   padding: 2%;
@@ -250,7 +243,7 @@ footer{
     display: block;
   }
 
-  .mobile {
+  .mobile , .mobile-nav {
     display: none;
   }
 
@@ -265,12 +258,25 @@ footer{
     border-top: none;
     display: inline-block;
     font-size: 2em;
+    font-family: 'Times New Roman', Times, serif;
   }
 
   nav li a{
-    padding: 0.5em;
+  color: #f6eee4;
+  padding: 0.5em;
+  text-decoration: none;  
+  display: block;
   }
 
+  nav li:first-child{
+  border-top: none;
+  }
+  nav ul{
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+  margin: 0%;
+  }
   /* Tablet Style rules for main */
   main {
     font-size: 1.5em;
@@ -325,6 +331,7 @@ footer{
   nav li a:hover{
     color: #c32bee;
     text-shadow: 2px 1px 2px #c32bee;
+     transform: scale(1.5);
   }
   
   /* Style rules for table */
