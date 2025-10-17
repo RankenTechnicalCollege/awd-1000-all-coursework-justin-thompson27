@@ -11,86 +11,104 @@
    
 
     <!-- Bootstrap Navigation bar -->
-    <nav class="navbar navbar-expand-sm navbar-light">
-      
-      <a class="navbar-brand" href="#">Bootstrap</a>
+    <nav class="navbar navbar-expand-sm navbar-light bg-body-primary ">
+      <div class="container-fluid">
+       
        
       <!-- Hamburger menu -->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
       </button>
       
       <!-- Nav links -->
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link text-primary" href="#a1">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-primary" href="#a2">Features</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-primary" href="#a3">Layout</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-primary" href="#">Content</a>
-          </li>    
-        </ul>
-      </div>  
+        <div class="collapse navbar-collapse justify-content-center" id="navbarResponsive">
+           <a class="navbar-brand" href="#">Bootstrap</a>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-primary" href="#a1">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-primary" href="#a2">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-primary" href="#a3">Layout</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-primary" href="#">Content</a>
+            </li>    
+          </ul>
+        </div>  
+      </div>
     </nav>
+
+     <main class="container-fluid mx-0   my-5 ">
+      <section id="a1">
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img src="images/picforcaro1.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="images/caropic2.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/caropic3.png" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+
     
 
- 
-
- 
-     <main class="container container-fluid vw-100 my-5 ">
-        
-      
-      <section id="a1">
 
 
-              <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="10000">
-            <img src="images/picforcaro1.png" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item" data-bs-interval="2000">
-            <img src="images/caropic2.png" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="images/caropic3.png" class="d-block w-100" alt="...">
+      <section id="a2" class=" container-fluid d-flex justify-content-center align-items-center my-5 mx-0">
+        <div class="row">
+            <div class="col-lg-12">
+              <div class="heading text-center">
+                 <h1>blah blah</h1>
+                 <h2>blah blah</h2>
+                 <div class="mile links text-center">
+                 <a href="#">mile3</a>
+                 <br>
+                 <a href="#">mile5</a>
+              </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d3121.833184920978!2d-89.982815!3d38.514558!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzjCsDMwJzUyLjQiTiA4OcKwNTgnNTMuNSJX!5e0!3m2!1sen!2sus!4v1710269364337!5m2!1sen!2sus" width="600" height="450" allowfullscreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                <div class="d-flex justify-content-evenly">
+                  <div class="col">
+                    <h1>thursday</h1>
+                    <p>location</p>
+                    <br>
+                    <p>address</p>
+                  </div>
+                  <div class="col">
+                    <h1>saturday</h1>
+                    <br>
+                    <p>address</p>
+                  </div>
+                </div>
+            </div>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-
-
-
-
-
-      </section>
-
-    
-
-
-
-      <section id="a2">
-      <p>afafafaf</p>
-     <iframe src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d3121.833184920978!2d-89.982815!3d38.514558!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzjCsDMwJzUyLjQiTiA4OcKwNTgnNTMuNSJX!5e0!3m2!1sen!2sus!4v1710269364337!5m2!1sen!2sus" width="600" height="450" allowfullscreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+   
 
       </section>
 
 
-        <section id="a3" 2class="row text-center">
+        <section id="a3" class="container-fluid w-100 bg-primary text-center mx-0">
 
-            <div class="col-sm-3">
+
+          <div class="row gap-4">
+
+             <div class="col">
               <h3>Jumbotron</h3>
               <p>Create a Bootstrap jumbotron to capture the user's attention.</p>
               <ul>
@@ -99,7 +117,7 @@
               </ul>
                <a role="button" class="btn btn-primary btn-lg" href="#">Get Started</a>
             </div>
-            <div class="col-sm-3 bg-light-blue">
+            <div class="col bg-light-blue">
               <h3>Navbar</h3>
               <p>Create a responsive navigation bar for all viewports.</p>
               <ul>
@@ -108,7 +126,7 @@
               </ul>
                <a role="button" class="btn btn-primary btn-lg" href="#">Get Started</a>
             </div>
-            <div class="col-sm-3">
+            <div class="col">
               <h3>Grid System</h3>
               <p>Use the Bootstrap grid system to create columns of content.</p>
               <ul>
@@ -117,7 +135,7 @@
               </ul>
                <a role="button" class="btn btn-primary btn-lg" href="#">Get Started</a>
             </div>
-            <div class="col-sm-3 bg-light-blue">
+            <div class="col bg-light-blue">
               <h3>Tables</h3>
               <p>Learn how to quickly style tables with Bootstrap.</p>
               <ul>
@@ -127,14 +145,17 @@
                <a role="button" class="btn btn-primary btn-lg" href="#">Get Started</a>
             </div>
 
+
+          </div>
+           
           </section>
 
       </main>
      <footer class="jumbotron-fluid text-center bg-primary p-3">
        
         <div class="container text-white">
-            <p>&copy; Copyright 2021. All Rights Reserved.</p>
-            <p>Webpage Created by: Student's Name</p>
+            <p>&copy; Copyright 2025 Belleville Running Club</p>
+            
         </div>
         
     </footer>  
