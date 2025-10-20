@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Geometry Calculator</title>
+    </head>
+    <body>        
+        <script>
+            "use strict";
+
+            // get the length of side A and B
+            const a = parseFloat(prompt("Enter the length of side A:"));
+            const b = parseFloat(prompt("Enter the length of side B:"));
+
+            // calculate the perimeter of the rectangle
+            const perimeter = a + a + b + b;
+            console.log(perimeter);
+
+            // calculate the area of the rectangle
+            const area = a * b; 
+            console.log(area);
+
+            // get the hypotenuse of the right triangle
+            // pythagorean theorem : c = sqrt(a^2 + b^2)
+            const hypotenuse = Math.sqrt(a**2 + b**2);
+            console.log(hypotenuse);
+
+            // display the results to the user
+            alert("Side A: " + a + "\n" +
+                  "Side B: " + b + "\n" +
+                  "Perimeter: " + perimeter + "\n" +
+                  "Area: " + area + "\n" +
+                  "Hypotenuse: " + hypotenuse.toFixed(4));
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Countries</title>
+</head>
+<body>        
+    <script>
+    "use strict";
+
+    const countries = ["Argentina", "Brazil"];
+    while (true) {
+        const country = prompt("Enter the name of a country:");
+        if (country == null) {   // if user clicks Cancel
+            break;
+        }
+
+        // add the country to the array, if it isn't aleady in the array
+        if (countries.includes(country)) {
+            alert(country + " is already in the array.");
+        }
+        else {
+            countries.push(country);
+        }
+
+        // if there are more than 3 element in the array, remove the first element
+        if (countries.length > 3) {
+            const removedCountry = countries.shift();
+            alert(removedCountry + " has been removed.");
+        }
+
+        // display each country in the array on its own line
+        alert(countries.join("\n"));
+    }
+    </script>
+</body>
+</html>

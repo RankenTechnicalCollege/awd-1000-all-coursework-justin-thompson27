@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Words</title>
+</head>
+<body>
+    <script>
+    "use strict";
+
+    const sentence = `
+    It was the best of times, it was the worst of times, 
+    it was the age of wisdom, it was the age of foolishness, 
+    it was the epoch of belief, it was the epoch of incredulity, 
+    it was the season of Light, it was the season of Darkness, 
+    it was the spring of hope, it was the winter of despair, 
+    we had everything before us, we had nothing before us, 
+    we were all going direct to Heaven, 
+    we were all going direct the other way - in short, the period 
+    was so far like the present period, that some of its noisiest 
+    authorities insisted on its being received, for good or for evil, 
+    in the superlative degree of comparison only.`;
+
+    // remove commas, dashes, periods, and leading and trailing whitespace
+    const newSentence = sentence
+        .replaceAll(",", "")
+        .replaceAll(" - ", " ")
+        .replaceAll(".", "")
+        .trim();
+
+    // log the new sentence to the console
+    console.log(newSentence);
+
+    // get a count of the lines
+    const lines = newSentence.split("\n"); 
+    console.log("Line count: " + lines.length);
+
+    // remove leading and trailing spaces from each line
+    for (let i in lines) {
+        lines[i] = lines[i].trim();
+    }
+
+    // get a count of the words
+    const words = lines.join(" ").split(" ");
+    console.log("Word count: " + words.length);
+
+    </script>
+</body>
+</html>
