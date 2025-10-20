@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Grade Converter</title>
+</head>
+<body>
+	<script>
+		"use strict";
+		let numberGrade = 0;
+		let letterGrade = "";
+		
+		while (true) {
+			// get number grade from user 
+			numberGrade = prompt("Enter number grade from 0 to 100\n" +
+						"Or enter x to end app", "x");
+
+			// if user entered 'x' or clicked Cancel, end loop
+			if (numberGrade == "x" || numberGrade == null) {
+				break;
+			}
+
+			// convert to int
+			numberGrade = parseInt(numberGrade);
+		
+			// convert to letter grade
+			if (numberGrade < 60) { 
+				letterGrade = "F"; 
+			} else if (numberGrade <= 67) { 
+				letterGrade = "D"; 
+			} else if (numberGrade <= 79) { 
+				letterGrade = "C"; 
+			} else if (numberGrade <= 87) { 
+				letterGrade = "B"; 
+			} else if (numberGrade <= 100){ 
+				letterGrade = "A"; 
+			}
+				
+			// if number grade is in proper range, notify user of letter grade
+			// otherwise, notify user grade is not in range
+			if (numberGrade >= 0 && numberGrade <= 100) {
+				const response = `Grade ${numberGrade} = ${letterGrade}`;
+				alert(response);
+			} else {
+				alert(`You entered ${numberGrade}.\nGrade must range from 0 to 100.`);
+			}
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Coin Toss</title>
+</head>
+<body>        
+<script>
+    "use strict";
+
+    const guess = prompt("Enter a guess for the coin flip (heads/tails)");
+
+    if (!guess) {
+        alert("You didn't provide a guess.");
+    } else if (guess != "heads" && guess != "tails") {
+        alert("That isn't a valid option. Enter 'heads' or 'tails'.");
+    } else {
+        const flip = Math.ceil(Math.random() * 2);
+        
+        let coinFace = "";
+        switch (flip) {
+            case 1:
+                coinFace = "heads";
+                break;
+            case 2:
+                coinFace = "tails";
+                break;
+        }
+
+        let message = "";
+        if (coinFace == guess) {
+            message = "You win!";
+        } else {
+            message = "Sorry, you lose.";
+        }
+
+        alert("You guessed " + guess + ".\n" +
+              "The coin was " + coinFace + ".\n" +
+              message);
+    }
+</script>
+</body>
+</html>

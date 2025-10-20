@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<head>	
+    <title>Sum of Numbers</title>
+</head>
+<body>
+	<script>
+		"use strict";
+		let number = 0;
+		let again = "";
+
+		// use a do-while loop so at least one sum is calculated
+		do {
+			// make sure user enters a valid number in range
+			do {
+				number = prompt("Enter a number from 1 through 100", "5");
+				number = parseInt(number);
+			}
+			while (isNaN(number) || number < 1 || number > 100);
+			
+			// calculate sum
+			let sum = 0;
+			for (let i = 1; i <= number; i++) {
+				sum = sum + i;
+			} 
+
+			// notify user
+			const response = `The sum of the numbers from 1 through ${number} is ${sum}`;
+			alert(response);
+		
+			// ask user if they want to do another sum
+			again = prompt("Do another sum?", "y");
+		}
+		while (again == "y")
+	</script>
+</body>
+</html>

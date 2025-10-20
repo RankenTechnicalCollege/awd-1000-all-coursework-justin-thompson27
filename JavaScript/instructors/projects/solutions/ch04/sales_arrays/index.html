@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+    <title>Sales Data</title>
+</head>
+<body>
+    <script>
+        // sales data
+        const region1 = [1540, 1130, 1580, 1105];
+        const region2 = [2010, 1168, 2305, 4102];
+        const region3 = [2450, 1847, 2710, 2391];
+        const region4 = [1845, 1491, 1284, 1575];
+        const region5 = [2120, 1767, 1599, 3888];
+
+        // declare array for quarter sales and variables for annual sales and display string
+        const quarterSales = [];
+        let annualSales = 0;
+        let displayStr = "Sales by Quarter\n";
+
+        // get quarterly sales, annual sales, and build display string
+        for (let i in region1){  // can use any region array in for-in statement
+            quarterSales[i] = region1[i] + region2[i] + region3[i] + region4[i] + region5[i];
+            annualSales += quarterSales[i];
+            displayStr += `Q${Number(i) + 1}: $${quarterSales[i]}\n`;
+        }
+
+        // display quarter sales and annual sales
+        displayStr += `\nAnnual Sales\n$${annualSales}`;
+        alert(displayStr);
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<head>	
+    <title>Temperature Converter</title>
+</head>
+<body>
+	<script>
+		"use strict";
+		let f = 0;
+		while (true) {
+			// get Fahrenheit temp from user
+			f = prompt("Enter Fahrenheit temperature\n" +
+					"Or enter x to end app", "x");
+			
+			// if user entered 'x', end loop
+			if (f == "x") {
+				break;
+			}
+
+			// convert to decimal
+			f = parseFloat(f);
+
+			// if is within correct range, calculate and display
+			if (f >= -100 && f <= 212) {
+				// calculate Celsius temp
+				const c = (f-32) * 5/9;
+
+				// display the conversion - round temps to 1 decimal place
+				const response = `${f.toFixed(1)} F = ${c.toFixed(1)} C`;
+				alert(response);
+			} 
+			// otherwise, notify user 
+			else {
+				alert("You entered " + f + ".\n" +
+					"Entry must range from -100 to +212.");
+			}
+		}
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stairs</title>
+</head>
+<body>        
+    <script>
+        "use strict";
+
+        let height = prompt("Enter the height of the stairs to print");
+
+        let stairs = "";
+        for (let i = 0; i < height; i++) {
+            stairs += "#";
+            console.log(stairs);
+        }
+
+        while (height > 0) {
+            height--;
+            stairs = stairs.slice(0, -1);
+            console.log(stairs);
+        }
+    </script>
+</body>
+</html>

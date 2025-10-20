@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    margin: 1em auto;
+    width: 580px;
+    padding: 1em 2em 1em;
+    border: 1px solid black;
+    border-radius: 1em;
+}
+h1 {
+	color: cornflowerblue;
+	margin-top: 0;
+}
+div {
+	margin-bottom: 0.5em;
+}
+label {
+	float: left;
+    width: 14em;
+    text-align: right;
+}
+input, button {
+    margin-left: 1em;
+}
+button {
+	margin-bottom: 1em;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Street Craps Dice Game</title>
+    <link rel="stylesheet" type="text/css" href="craps.css">
+</head>
+
+<body>
+	<h1>Street craps</h1>
+	<p>Rules:</p>
+	<ul>
+		<li>If you roll 7 or 11 on the first (come out) roll, you win.</li>
+		<li>If you roll 2, 3, or 12 on the come out roll, you lose.</li>
+		<li>Any other number on the come out roll sets the point.</li>
+		<li>If you roll the point before you roll 7, you win.</li>
+		<li>If you roll 7 before you roll the point, you lose.</li>
+	</ul>
+	<div>
+		<button id="roll">Roll</button>
+		<button id="new_game" disabled>New Game</button>
+	</div>
+	<div>
+		<label>Current roll: <span id="current_roll">0</span></label>
+		<label>The point: <span id="point">0</span></label>
+	</div>
+	<p id="message"></p>
+
+	<script type="importmap">
+	  {
+		"imports": {
+			"dice": "./lib_dice.js",
+			"craps": "./lib_street_craps.js"
+		}
+	  }
+	</script>
+   	<script src="craps.js" type="module"></script>
+</body>
+</html>

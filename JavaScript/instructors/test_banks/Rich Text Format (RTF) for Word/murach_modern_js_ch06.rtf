@@ -1,0 +1,2647 @@
+{\rtf1\ansi \deff0{\fonttbl
+{\f0\froman\fcharset0\fprq2 Times New Roman;
+}{\f1\froman\fcharset0\fprq2 Times New Roman;
+}{\f2\fmodern\fcharset0\fprq1 Courier New;
+}{\f3\fmodern\fcharset0\fprq1 Courier New;
+}{\f4\fnil\fcharset0\fprq1 Courier New;
+}}{\colortbl;
+\red0\green0\blue0;
+\red0\green0\blue255;
+\red0\green255\blue255;
+\red0\green255\blue0;
+\red255\green0\blue255;
+\red255\green0\blue0;
+\red255\green255\blue0;
+\red255\green255\blue255;
+\red0\green0\blue128;
+\red0\green128\blue0;
+\red128\green0\blue128;
+\red128\green0\blue0;
+\red128\green128\blue0;
+\red128\green128\blue128;
+\red192\green192\blue192;
+}\hyphauto1\deflang1033
+\marglsxn2070\margrsxn1080\margtsxn720\margbsxn1440\cols1\endnhere\colno1\colw9090\pard
+\brdrb\brdrs\brdrw120\brdrcf1
+\nowidctlpar\hyphpar0
+\li-630\ri0\fi0
+\ql\plain \b \f0
+\fs28
+\cf1
+{Chapter 6: How to script the DOM\par
+}\plain \b \f0
+\fs28
+\cf1
+{Murach's Modern JavaScript}\plain \f1
+\fs2
+\cf1
+{\par
+}\plain \f1
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs36
+\cf1
+{\par
+}\plain \f1
+\fs36
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li-630\ri0\fi0
+\ql\plain \b \f1
+\fs22
+\cf1
+{MULTIPLE CHOICE}\plain \f1
+\fs2
+\cf1
+{\par
+}\plain \f1
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs22
+\cf1
+{\par
+}\plain \f1
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f1
+\fs22
+\cf1
+{1.}{\tab }\plain \f1
+\fs22
+\cf1
+{Which of the following statements is }\plain \b \f1
+\fs22
+\cf1
+{not}\plain \f1
+\fs22
+\cf1
+{ true?\par
+}\plain \f1
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{The DOM for a web page is built as the page is loaded by the web browser. \cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{The DOM is a hierarchical collection of nodes in the web browser\'92
+s memory.\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}{You can modify the DOM with JavaScript by using the DOM API.\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}{To display changes made to the DOM, you must refresh the web page.\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs2
+\cf1
+{\par
+}\plain \f1
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f1
+\fs12
+\cf1
+{\par
+}\plain \f1
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f1
+\fs22
+\cf1
+{ANS:\tab }\plain \f1
+\fs22
+\cf1
+{D}\plain \f1
+\fs2
+\cf1
+{\par
+}\plain \f1
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs22
+\cf1
+{\par
+}\plain \f1
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f1
+\fs22
+\cf1
+{2.}{\tab }\plain \f1
+\fs22
+\cf1
+{Which property would you use to get the first child node of a node?\par
+}\plain \f1
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx4185
+\clvertalt
+\cellx4545
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}\plain \b \f2
+\fs18
+\cf1
+{nextElementSibling}\plain \f1
+\fs22
+\cf1
+{\cell
+}{c.}{\cell
+}\plain \b \f2
+\fs18
+\cf1
+{firstChild}\plain \f1
+\fs22
+\cf1
+{\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx4185
+\clvertalt
+\cellx4545
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}\plain \b \f2
+\fs18
+\cf1
+{parentNode}\plain \f1
+\fs22
+\cf1
+{\cell
+}{d.}{\cell
+}\plain \b \f2
+\fs18
+\cf1
+{nextChild}\plain \f1
+\fs22
+\cf1
+{\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs2
+\cf1
+{\par
+}\plain \f1
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f1
+\fs12
+\cf1
+{\par
+}\plain \f1
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f1
+\fs22
+\cf1
+{ANS:\tab }\plain \f1
+\fs22
+\cf1
+{C}\plain \f1
+\fs2
+\cf1
+{\par
+}\plain \f1
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs22
+\cf1
+{\par
+}\plain \f1
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f1
+\fs22
+\cf1
+{3.}{\tab }\plain \f1
+\fs22
+\cf1
+{The childNodes property of the Node interface...\par
+}\plain \f1
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{returns the text that\'92
+s stored in the first child node of a node\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{returns one or more Node objects that represent the child nodes of a node\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}{returns one or more String objects that contain the text values (if any) stored
+ in all child nodes of a node\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}{returns true if a node has one or more child nodes\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs2
+\cf1
+{\par
+}\plain \f1
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f1
+\fs12
+\cf1
+{\par
+}\plain \f1
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f1
+\fs22
+\cf1
+{ANS:\tab }\plain \f1
+\fs22
+\cf1
+{B}\plain \f1
+\fs2
+\cf1
+{\par
+}\plain \f1
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs22
+\cf1
+{\par
+}\plain \f1
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f1
+\fs22
+\cf1
+{4.}{\tab }\plain \f1
+\fs22
+\cf1
+{What does the following code do?\par
+}\plain \f1
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li360\ri0\fi0
+\ql\sa120\plain \b \f3
+\fs18
+\cf1
+{document.querySelectorAll("a");\par
+}\plain \b \f3
+\fs18
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs22
+\cf1
+{a.}{\cell
+}{retrieves all <a> elements in a web page\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{moves the focus to all HTML elements with an id of \'93
+a\'94
+\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}{returns true if all <a> elements in a web page can be selected\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}{nothing\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs2
+\cf1
+{\par
+}\plain \f1
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f1
+\fs12
+\cf1
+{\par
+}\plain \f1
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f1
+\fs22
+\cf1
+{ANS:\tab }\plain \f1
+\fs22
+\cf1
+{A}\plain \f1
+\fs2
+\cf1
+{\par
+}\plain \f1
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs22
+\cf1
+{\par
+}\plain \f1
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f1
+\fs22
+\cf1
+{5.}{\tab }\plain \f1
+\fs22
+\cf1
+{How would you rewrite this statement to use the HTML DOM API?\par
+}\plain \f1
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li360\ri0\fi0
+\ql\sa120\plain \b \f2
+\fs18
+\cf1
+{alert(imageElement.getAttribute(src));\par
+}\plain \f1
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}\plain \b \f2
+\fs18
+\cf1
+{alert(imageElement.HTML("src"));}\plain \f1
+\fs22
+\cf1
+{\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}\plain \b \f2
+\fs18
+\cf1
+{alert(attribute.src);}\plain \f1
+\fs22
+\cf1
+{\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}\plain \b \f2
+\fs18
+\cf1
+{alert(html.getAttribute(src));}\plain \f1
+\fs22
+\cf1
+{\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}\plain \b \f2
+\fs18
+\cf1
+{alert(imageElement.src);}\plain \f1
+\fs22
+\cf1
+{\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs2
+\cf1
+{\par
+}\plain \f1
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f1
+\fs12
+\cf1
+{\par
+}\plain \f1
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f1
+\fs22
+\cf1
+{ANS:\tab }\plain \f1
+\fs22
+\cf1
+{D}\plain \f1
+\fs2
+\cf1
+{\par
+}\plain \f1
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs22
+\cf1
+{\par
+}\plain \f1
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f1
+\fs22
+\cf1
+{6.}{\tab }\plain \f1
+\fs22
+\cf1
+{Which of the following statements about the HTML DOM API is }\plain \b \f1
+\fs22
+\cf1
+{not}\plain \f1
+\fs22
+\cf1
+{ true?\par
+}\plain \f1
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{It provides properties that make it easier to work with HTML elements. \cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{Its properties provide new functionality not in the DOM API.\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}{Some of its properties have different names from the corresponding properties i
+n the DOM API.\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}{Some of its properties apply only to specific HTML elements. \cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs2
+\cf1
+{\par
+}\plain \f1
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f1
+\fs12
+\cf1
+{\par
+}\plain \f1
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f1
+\fs22
+\cf1
+{ANS:\tab }\plain \f1
+\fs22
+\cf1
+{B}\plain \f1
+\fs2
+\cf1
+{\par
+}\plain \f1
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs22
+\cf1
+{\par
+}\plain \f1
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f1
+\fs22
+\cf1
+{7.}{\tab }\plain \f1
+\fs22
+\cf1
+{Which of the following statements about radio buttons is NOT true?\par
+}\plain \f1
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{A user can select more than one radio button in a group.\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{Each radio button in a group must have the same name attribute.\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}{Each radio button in a group must have a unique id attribute.\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}{All of these statements are true.\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs2
+\cf1
+{\par
+}\plain \f1
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f1
+\fs12
+\cf1
+{\par
+}\plain \f1
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f1
+\fs22
+\cf1
+{ANS:\tab }\plain \f1
+\fs22
+\cf1
+{A}\plain \f1
+\fs2
+\cf1
+{\par
+}\plain \f1
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs22
+\cf1
+{\par
+}\plain \f1
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f1
+\fs22
+\cf1
+{8.}{\tab }\plain \f1
+\fs22
+\cf1
+{How can you clear a check from a check box?\par
+}\plain \f1
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx4185
+\clvertalt
+\cellx4545
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{set its clear property to true\cell
+}{c.}{\cell
+}{set its value property to an empty string\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx4185
+\clvertalt
+\cellx4545
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{set its checked property to false\cell
+}{d.}{\cell
+}{call its blur() method\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs2
+\cf1
+{\par
+}\plain \f1
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f1
+\fs12
+\cf1
+{\par
+}\plain \f1
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f1
+\fs22
+\cf1
+{ANS:\tab }\plain \f1
+\fs22
+\cf1
+{B}\plain \f1
+\fs2
+\cf1
+{\par
+}\plain \f1
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs22
+\cf1
+{\par
+}\plain \f1
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f1
+\fs22
+\cf1
+{9.}{\tab }\plain \f1
+\fs22
+\cf1
+{What method would you use to remove the focus from a control? \par
+}\plain \f1
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx4185
+\clvertalt
+\cellx4545
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}\plain \b \f2
+\fs18
+\cf1
+{focus()\cell
+}\plain \f1
+\fs22
+\cf1
+{c.}{\cell
+}\plain \b \f2
+\fs18
+\cf1
+{remove()\cell
+}\row
+\plain \f1
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx4185
+\clvertalt
+\cellx4545
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}\plain \b \f2
+\fs18
+\cf1
+{blur()\cell
+}\plain \f1
+\fs22
+\cf1
+{d.}{\cell
+}\plain \b \f2
+\fs18
+\cf1
+{value()}\plain \f1
+\fs22
+\cf1
+{\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs2
+\cf1
+{\par
+}\plain \f1
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f1
+\fs12
+\cf1
+{\par
+}\plain \f1
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f1
+\fs22
+\cf1
+{ANS:\tab }\plain \f1
+\fs22
+\cf1
+{B}\plain \f1
+\fs2
+\cf1
+{\par
+}\plain \f1
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs22
+\cf1
+{\par
+}\plain \f1
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f1
+\fs22
+\cf1
+{10.}{\tab }\plain \f1
+\fs22
+\cf1
+{What event occurs when the user selects a new item from a select element?\par
+}\plain \f1
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx4185
+\clvertalt
+\cellx4545
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}\plain \b \f2
+\fs18
+\cf1
+{click}\plain \f1
+\fs22
+\cf1
+{\cell
+}{c.}{\cell
+}\plain \b \f2
+\fs18
+\cf1
+{select}\plain \f1
+\fs22
+\cf1
+{\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx4185
+\clvertalt
+\cellx4545
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}\plain \b \f2
+\fs18
+\cf1
+{dblclick}\plain \f1
+\fs22
+\cf1
+{\cell
+}{d.}{\cell
+}\plain \b \f2
+\fs18
+\cf1
+{change}\plain \f1
+\fs22
+\cf1
+{\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs2
+\cf1
+{\par
+}\plain \f1
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f1
+\fs12
+\cf1
+{\par
+}\plain \f1
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f1
+\fs22
+\cf1
+{ANS:\tab }\plain \f1
+\fs22
+\cf1
+{D}\plain \f1
+\fs2
+\cf1
+{\par
+}\plain \f1
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs22
+\cf1
+{\par
+}\plain \f1
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f1
+\fs22
+\cf1
+{11.}{\tab }\plain \f1
+\fs22
+\cf1
+{Given the following code for a button, what would you need to change so it sends
+ the form data to the server upon being clicked?\par
+}\plain \f1
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li360\ri0\fi0
+\ql\sa120\plain \b \f3
+\fs18
+\cf1
+{<input type="button" value="Register" id="register">\par
+}\plain \b \f3
+\fs18
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs22
+\cf1
+{a.}{\cell
+}{Set the id attribute to \'93
+send\'94
+.\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{Set the value attribute to \'93
+Submit\'94
+.\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}{Set the type attribute to \'93
+submit\'94
+.\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}{Edit the value and id attributes so they match.\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs2
+\cf1
+{\par
+}\plain \f1
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f1
+\fs12
+\cf1
+{\par
+}\plain \f1
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f1
+\fs22
+\cf1
+{ANS:\tab }\plain \f1
+\fs22
+\cf1
+{C}\plain \f1
+\fs2
+\cf1
+{\par
+}\plain \f1
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs22
+\cf1
+{\par
+}\plain \f1
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f1
+\fs22
+\cf1
+{12.}{\tab }\plain \f1
+\fs22
+\cf1
+{What does the following code do?}\plain \b \f2
+\fs18
+\cf1
+{\par
+}\plain \b \f2
+\fs18
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li360\ri0\fi0
+\ql\sa120\tx2160
+{const getElement = selector => document.querySelector(selector);\par
+}\plain \b \f2
+\fs18
+\cf1
+{getElement("#email").nextElementSibling.textContent = "Required";\par
+}\plain \f1
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{Replaces the sibling nodes for all <email> element nodes with a single text nod
+e.\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{Creates a new text node and makes it the next sibling for the element named \'93
+#e
+mail\'94
+.\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}{Replaces the text for all child elements of the element with \'93
+email\'94
+ as its id 
+attribute.\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}{Sets the text for the element that comes after the element with \'93
+email\'94
+ as its 
+id attribute.\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs2
+\cf1
+{\par
+}\plain \f1
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f1
+\fs12
+\cf1
+{\par
+}\plain \f1
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f1
+\fs22
+\cf1
+{ANS:\tab }\plain \f1
+\fs22
+\cf1
+{D}\plain \f1
+\fs2
+\cf1
+{\par
+}\plain \f1
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs22
+\cf1
+{\par
+}\plain \f1
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f1
+\fs22
+\cf1
+{13.}{\tab }\plain \f1
+\fs22
+\cf1
+{What does the following code do?\par
+}\plain \f1
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li360\ri0\fi0
+\ql\tx2160
+\plain \b \f2
+\fs18
+\cf1
+{const getElement = selector => document.querySelector(selector);\par
+}\plain \b \f2
+\fs18
+\cf1
+\plain \b \f4
+\fs18
+\cf1
+{\par
+}\plain \b \f4
+\fs18
+\cf1
+{const investmentChange = () => \{\par
+}\plain \b \f4
+\fs18
+\cf1
+{    const years = parseInt(getElement("#years").value);\par
+}\plain \b \f4
+\fs18
+\cf1
+{    alert("Years: " + years);\par
+}\plain \b \f4
+\fs18
+\cf1
+{\};\par
+}\plain \b \f4
+\fs18
+\cf1
+{\par
+}\plain \b \f4
+\fs18
+\cf1
+{document.addEventListener("DOMContentLoaded", () => \{\par
+}\plain \b \f4
+\fs18
+\cf1
+{    getElement("#investment").addEventListener("change", investmentChange);\par
+}\plain \b \f4
+\fs18
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li360\ri0\fi0
+\ql\sa120\tx2160
+{\});\par
+}\plain \f1
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{calls investmentChange() after the DOM has finished loading\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{creates an event handler for the element named \'93
+#years\'94
+\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}{changes the event listener for the element with an id of \'93
+investment\'94
+ to change
+ when the button named \'93
+investmentChange\'94
+ is clicked\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}{attaches investmentChange() as an event handler to the change event of an eleme
+nt with an id of \'93
+investment\'94
+\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs2
+\cf1
+{\par
+}\plain \f1
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f1
+\fs12
+\cf1
+{\par
+}\plain \f1
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f1
+\fs22
+\cf1
+{ANS:\tab }\plain \f1
+\fs22
+\cf1
+{D}\plain \f1
+\fs2
+\cf1
+{\par
+}\plain \f1
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs22
+\cf1
+{\par
+}\plain \f1
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f1
+\fs22
+\cf1
+{14.}{\tab }\plain \f1
+\fs22
+\cf1
+{Given this HTML element:}\plain \b \f4
+\fs18
+\cf1
+{\par
+}\plain \b \f4
+\fs18
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li360\ri0\fi0
+\ql\sa120\tx2160
+{<form id="register_form" action="register" method="post">\par
+}\plain \b \f4
+\fs18
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\sa120\plain \f1
+\fs22
+\cf1
+{And this function:\par
+}\plain \f1
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li360\ri0\fi0
+\ql\sa120\plain \b \f2
+\fs18
+\cf1
+{const getElement = selector => document.querySelector(selector);}\plain \f1
+\fs22
+\cf1
+{\par
+}\plain \f1
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\sa120{Which of the following statements resets all controls stored within in this HTML
+ element to their original state?\par
+}\plain \f1
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}\plain \b \f2
+\fs18
+\cf1
+{getElement("#register_form").clear();}\plain \f1
+\fs22
+\cf1
+{\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}\plain \b \f2
+\fs18
+\cf1
+{getElement("#register_form").action = reset;}\plain \f1
+\fs22
+\cf1
+{\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}\plain \b \f2
+\fs18
+\cf1
+{getElement("#register_form").allValues = "";}\plain \f1
+\fs22
+\cf1
+{\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}\plain \b \f2
+\fs18
+\cf1
+{getElement("#register_form").reset();}\plain \f1
+\fs22
+\cf1
+{\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs2
+\cf1
+{\par
+}\plain \f1
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f1
+\fs12
+\cf1
+{\par
+}\plain \f1
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f1
+\fs22
+\cf1
+{ANS:\tab }\plain \f1
+\fs22
+\cf1
+{D}\plain \f1
+\fs2
+\cf1
+{\par
+}\plain \f1
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs22
+\cf1
+{\par
+}\plain \f1
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f1
+\fs22
+\cf1
+{15.}{\tab }\plain \f1
+\fs22
+\cf1
+{What would you use the following code to do?}\plain \b \f4
+\fs18
+\cf1
+{\par
+}\plain \b \f4
+\fs18
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li360\ri0\fi0
+\ql\tx2160
+{const image = new Image();\par
+}\plain \b \f4
+\fs18
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li360\ri0\fi0
+\ql\sa120\tx2160
+{image.src = "my_image.jpg";\par
+}\plain \f1
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{create a new <img> element and add it to the DOM\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{preload an image\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}{change the source of an existing image\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}{get an <img> element from a web page\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs2
+\cf1
+{\par
+}\plain \f1
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f1
+\fs12
+\cf1
+{\par
+}\plain \f1
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f1
+\fs22
+\cf1
+{ANS:\tab }\plain \f1
+\fs22
+\cf1
+{B}\plain \f1
+\fs2
+\cf1
+{\par
+}\plain \f1
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs22
+\cf1
+{\par
+}\plain \f1
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f1
+\fs22
+\cf1
+{16.}{\tab }\plain \f1
+\fs22
+\cf1
+{Which of the following might be displayed after running the following code?}\plain \b \f4
+\fs18
+\cf1
+{\par
+}\plain \b \f4
+\fs18
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li360\ri0\fi0
+\ql\tx2160
+{myElement.classList.add("happy");\par
+}\plain \b \f4
+\fs18
+\cf1
+{myElement.classList.toggle("sad");\par
+}\plain \b \f4
+\fs18
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li360\ri0\fi0
+\ql\sa120\tx2160
+{alert(myElement.classList.length + ": " + myElement.classList.value);\par
+}\plain \f1
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{\'93
+1: happy\'94
+\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{\'93
+1: sad\'94
+\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}{\'93
+2: happy sad\'94
+\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}{\'93
+0: \'94
+\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs2
+\cf1
+{\par
+}\plain \f1
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f1
+\fs12
+\cf1
+{\par
+}\plain \f1
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f1
+\fs22
+\cf1
+{ANS:\tab }\plain \f1
+\fs22
+\cf1
+{C}\plain \f1
+\fs2
+\cf1
+{\par
+}\plain \f1
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs22
+\cf1
+{\par
+}\plain \f1
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\sa120\plain \b \f1
+\fs22
+\cf1
+{Code example 6-1\par
+}\plain \b \f1
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li360\ri0\fi0
+\ql{The HTML for the <body> element\par
+}\plain \b \f1
+\fs22
+\cf1
+\plain \b \f2
+\fs18
+\cf1
+{\par
+}\plain \b \f2
+\fs18
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li720\ri0\fi0
+\ql{<body>\par
+}\plain \b \f2
+\fs18
+\cf1
+{  <p><img id="my_image" src="images/my_image.jpg"></p>\par
+}\plain \b \f2
+\fs18
+\cf1
+{  <p>Who's in this photo?</p>\par
+}\plain \b \f2
+\fs18
+\cf1
+{  <ul id="people_list"></ul>\par
+}\plain \b \f2
+\fs18
+\cf1
+{  <input type="button" id="add" value="Add">\par
+}\plain \b \f2
+\fs18
+\cf1
+{\par
+}\plain \b \f2
+\fs18
+\cf1
+{  <script src="my_image_javascript.js"></script>\par
+}\plain \b \f2
+\fs18
+\cf1
+{</body>\par
+}\plain \b \f2
+\fs18
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li360\ri0\fi0
+\ql{\par
+}\plain \b \f2
+\fs18
+\cf1
+\plain \b \f1
+\fs22
+\cf1
+{The JavaScript\par
+}\plain \b \f1
+\fs22
+\cf1
+\plain \b \f2
+\fs18
+\cf1
+{\par
+}\plain \b \f2
+\fs18
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li720\ri0\fi0
+\ql{"use strict";\par
+}\plain \b \f2
+\fs18
+\cf1
+{\par
+}\plain \b \f2
+\fs18
+\cf1
+{document.addEventListener("DOMContentLoaded", () => \{\par
+}\plain \b \f2
+\fs18
+\cf1
+{\par
+}\plain \b \f2
+\fs18
+\cf1
+{   document.querySelector("#add").addEventListener("click", () => \{\par
+}\plain \b \f2
+\fs18
+\cf1
+{ \par
+}\plain \b \f2
+\fs18
+\cf1
+{      const person = prompt("Who would you like to add?"); \par
+}\plain \b \f2
+\fs18
+\cf1
+{\par
+}\plain \b \f2
+\fs18
+\cf1
+{      const newLI = document.createElement("li");\par
+}\plain \b \f2
+\fs18
+\cf1
+{      const text = document.createTextNode(person);\par
+}\plain \b \f2
+\fs18
+\cf1
+{      newLI.appendChild(text);\par
+}\plain \b \f2
+\fs18
+\cf1
+{ \par
+}\plain \b \f2
+\fs18
+\cf1
+{      const list = document.querySelector("ul");\par
+}\plain \b \f2
+\fs18
+\cf1
+{      list.appendChild(newLI);\par
+}\plain \b \f2
+\fs18
+\cf1
+{   \});\par
+}\plain \b \f2
+\fs18
+\cf1
+{\par
+}\plain \b \f2
+\fs18
+\cf1
+{\});}\plain \f1
+\fs2
+\cf1
+{\par
+}\plain \f1
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs22
+\cf1
+{\par
+}\plain \f1
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f1
+\fs22
+\cf1
+{17.}{\tab }\plain \f1
+\fs22
+\cf1
+\plain \b \f1
+\fs22
+\cf1
+{Refer to code example 6-1.}\plain \f1
+\fs22
+\cf1
+{ Generally speaking, what does this app do?\par
+}\plain \f1
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{builds an unordered list based on input from the user\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{preloads images one at a time as specified by the user\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}{gets text from the user to set the alt attribute of an image\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}{waits for the DOM to load, and then prompts the user to select an image\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs2
+\cf1
+{\par
+}\plain \f1
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f1
+\fs12
+\cf1
+{\par
+}\plain \f1
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f1
+\fs22
+\cf1
+{ANS:\tab }\plain \f1
+\fs22
+\cf1
+{A}\plain \f1
+\fs2
+\cf1
+{\par
+}\plain \f1
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs22
+\cf1
+{\par
+}\plain \f1
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f1
+\fs22
+\cf1
+{18.}{\tab }\plain \f1
+\fs22
+\cf1
+\plain \b \f1
+\fs22
+\cf1
+{Refer to code example 6-1.}\plain \f1
+\fs22
+\cf1
+{ What does this statement do?\par
+}\plain \f1
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi630
+\ql\sa120\plain \b \f4
+\fs18
+\cf1
+{list.appendChild(newLI);\par
+}\plain \b \f4
+\fs18
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs22
+\cf1
+{a.}{\cell
+}{replaces the value of the text for a <list> element\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{inserts new text at the beginning of an unordered list \cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}{creates a new <li> element\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}{adds an existing <li> element to the DOM\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs2
+\cf1
+{\par
+}\plain \f1
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f1
+\fs12
+\cf1
+{\par
+}\plain \f1
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f1
+\fs22
+\cf1
+{ANS:\tab }\plain \f1
+\fs22
+\cf1
+{D}\plain \f1
+\fs2
+\cf1
+{\par
+}\plain \f1
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs22
+\cf1
+{\par
+}\plain \f1
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f1
+\fs22
+\cf1
+{19.}{\tab }\plain \f1
+\fs22
+\cf1
+\plain \b \f1
+\fs22
+\cf1
+{Refer to code example 6-1.}\plain \f1
+\fs22
+\cf1
+{ The HTML for this app specifies multiple elements. Which of these elements coul
+d }\plain \b \f1
+\fs22
+\cf1
+{not}\plain \f1
+\fs22
+\cf1
+{ instead be created through JavaScript statements?\par
+}\plain \f1
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{<p>\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{<ul>\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}{<ul> and <input>\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}{none of these elements can be created and added to the DOM with JavaScript\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{e.}{\cell
+}{all of these elements can be created and added to the DOM with JavaScript\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs2
+\cf1
+{\par
+}\plain \f1
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f1
+\fs12
+\cf1
+{\par
+}\plain \f1
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f1
+\fs22
+\cf1
+{ANS:\tab }\plain \f1
+\fs22
+\cf1
+{E\par
+\pard
+}}

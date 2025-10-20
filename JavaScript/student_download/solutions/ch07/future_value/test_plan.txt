@@ -1,0 +1,10 @@
+Test Plan
+
+Investment	Interest Rate	Years	Future Value
+100         10              1       110
+100         10              2       121
+100         10              3       133.1
+100         10              4       146.41
+100         2.5             1       102.5
+
+Etc.

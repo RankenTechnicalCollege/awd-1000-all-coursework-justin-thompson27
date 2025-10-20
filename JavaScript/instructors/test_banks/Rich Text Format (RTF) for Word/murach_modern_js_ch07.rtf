@@ -1,0 +1,1437 @@
+{\rtf1\ansi \deff0{\fonttbl
+{\f0\froman\fcharset0\fprq2 Times New Roman;
+}{\f1\froman\fcharset0\fprq2 Times New Roman;
+}{\f2\fnil\fcharset0\fprq0 Times New Roman;
+}{\f3\fmodern\fcharset0\fprq1 Courier New;
+}}{\colortbl;
+\red0\green0\blue0;
+\red0\green0\blue255;
+\red0\green255\blue255;
+\red0\green255\blue0;
+\red255\green0\blue255;
+\red255\green0\blue0;
+\red255\green255\blue0;
+\red255\green255\blue255;
+\red0\green0\blue128;
+\red0\green128\blue0;
+\red128\green0\blue128;
+\red128\green0\blue0;
+\red128\green128\blue0;
+\red128\green128\blue128;
+\red192\green192\blue192;
+}\hyphauto1\deflang1033
+\marglsxn2070\margrsxn1080\margtsxn720\margbsxn1440\cols1\endnhere\colno1\colw9090\pard
+\brdrb\brdrs\brdrw120\brdrcf1
+\nowidctlpar\hyphpar0
+\li-630\ri0\fi0
+\ql\plain \b \f0
+\fs28
+\cf1
+{Chapter 7: How to test and debug an app\par
+}\plain \b \f0
+\fs28
+\cf1
+{Murach's Modern JavaScript}\plain \f1
+\fs2
+\cf1
+{\par
+}\plain \f1
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs36
+\cf1
+{\par
+}\plain \f1
+\fs36
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li-630\ri0\fi0
+\ql\plain \b \f1
+\fs22
+\cf1
+{MULTIPLE CHOICE}\plain \f1
+\fs2
+\cf1
+{\par
+}\plain \f1
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs22
+\cf1
+{\par
+}\plain \f1
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f1
+\fs22
+\cf1
+{1.}{\tab }\plain \f1
+\fs22
+\cf1
+{When you debug an app, you...\par
+}\plain \f1
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{Try to make the app fail\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{Try every possible combination of input data and user actions\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}{Fix identified bugs\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}{Test each function separately\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs2
+\cf1
+{\par
+}\plain \f1
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f1
+\fs12
+\cf1
+{\par
+}\plain \f1
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f1
+\fs22
+\cf1
+{ANS:\tab }\plain \f1
+\fs22
+\cf1
+{C}\plain \f1
+\fs2
+\cf1
+{\par
+}\plain \f1
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs22
+\cf1
+{\par
+}\plain \f1
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f1
+\fs22
+\cf1
+{2.}{\tab }\plain \f1
+\fs22
+\cf1
+{Which of the following is }\plain \b \f1
+\fs22
+\cf1
+{not}\plain \f1
+\fs22
+\cf1
+{ typically part of testing a JavaScript app?\par
+}\plain \f1
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{Trying to make the app fail\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{Misspelling keywords\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}{Testing the app with valid data\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}{Testing the app with invalid data\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs2
+\cf1
+{\par
+}\plain \f1
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f1
+\fs12
+\cf1
+{\par
+}\plain \f1
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f1
+\fs22
+\cf1
+{ANS:\tab }\plain \f1
+\fs22
+\cf1
+{B}\plain \f1
+\fs2
+\cf1
+{\par
+}\plain \f1
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs22
+\cf1
+{\par
+}\plain \f1
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f1
+\fs22
+\cf1
+{3.}{\tab }\plain \f1
+\fs22
+\cf1
+{Which of the following statements is true about syntax errors?\par
+}\plain \f1
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}\plain \f2
+\fs22
+\cf1
+{They don\'92
+t cause runtime errors, but do produce the wrong results.}\plain \f1
+\fs22
+\cf1
+{\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}\plain \f2
+\fs22
+\cf1
+{They occur after a page is loaded and the app is being run.}\plain \f1
+\fs22
+\cf1
+{\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}{They cause the }\plain \f2
+\fs22
+\cf1
+{JavaScript engine to throw an error during runtime that stops the execution of t
+he app}\plain \f1
+\fs22
+\cf1
+{\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}\plain \f2
+\fs22
+\cf1
+{They are caught by the JavaScript engine as a page is loaded into the web browse
+r.}\plain \f1
+\fs22
+\cf1
+{\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs2
+\cf1
+{\par
+}\plain \f1
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f1
+\fs12
+\cf1
+{\par
+}\plain \f1
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f1
+\fs22
+\cf1
+{ANS:\tab }\plain \f1
+\fs22
+\cf1
+{D}\plain \f1
+\fs2
+\cf1
+{\par
+}\plain \f1
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs22
+\cf1
+{\par
+}\plain \f1
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f1
+\fs22
+\cf1
+{4.}{\tab }\plain \f1
+\fs22
+\cf1
+{If do }\plain \b \f1
+\fs22
+\cf1
+{not}\plain \f1
+\fs22
+\cf1
+{ enable strict mode, what happens if you declare a variable named firstName and 
+later referred to it as firstname?\par
+}\plain \f1
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{The JavaScript engine creates a new global variable named firstname.\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{The JavaScript engine creates a new local variable named firstname.\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}{The JavaScript engine throws an error when loading the app.\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}{The JavaScript engine throws an error during runtime.\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs2
+\cf1
+{\par
+}\plain \f1
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f1
+\fs12
+\cf1
+{\par
+}\plain \f1
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f1
+\fs22
+\cf1
+{ANS:\tab }\plain \f1
+\fs22
+\cf1
+{A}\plain \f1
+\fs2
+\cf1
+{\par
+}\plain \f1
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs22
+\cf1
+{\par
+}\plain \f1
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0\tx2160
+{\tab }\plain \f1
+\fs22
+\cf1
+{5.}{\tab }\plain \f1
+\fs22
+\cf1
+{Assuming that you\'92
+ve enabled strict mode, what will happen when the following co
+de is executed?\par
+}\plain \f1
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li360\ri0\fi0
+\ql\tx2160
+\plain \b \f3
+\fs18
+\cf1
+{const calculateTax = (subtotal,taxRate) => \{\par
+}\plain \b \f3
+\fs18
+\cf1
+{    let salesTax = subtotal * taxRate;\par
+}\plain \b \f3
+\fs18
+\cf1
+{    salestax = parseFloat(salesTax.toFixed(2));\par
+}\plain \b \f3
+\fs18
+\cf1
+{    return salesTax;\par
+}\plain \b \f3
+\fs18
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li360\ri0\fi0
+\ql\sa120\tx2160
+{\};\par
+}\plain \f1
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{The salesTax variable will contain the right value, but it won\'92
+t be rounded.\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{An error will occur because salestax hasn\'92
+t been declared.\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}{The salestax variable will contain the rounded sales tax value.\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}{The salesTax variable will contain null when it is returned.\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs2
+\cf1
+{\par
+}\plain \f1
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f1
+\fs12
+\cf1
+{\par
+}\plain \f1
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f1
+\fs22
+\cf1
+{ANS:\tab }\plain \f1
+\fs22
+\cf1
+{B}\plain \f1
+\fs2
+\cf1
+{\par
+}\plain \f1
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs22
+\cf1
+{\par
+}\plain \f1
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\plain \b \f1
+\fs22
+\cf1
+{Code example 7-1}\plain \f1
+\fs22
+\cf1
+{\par
+}\plain \f1
+\fs22
+\cf1
+{\par
+}\plain \f1
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li360\ri0\fi0
+\ql\tx2160
+\plain \b \f3
+\fs18
+\cf1
+{const myNumber = 6;\par
+}\plain \b \f3
+\fs18
+\cf1
+{let factorial = 0;\par
+}\plain \b \f3
+\fs18
+\cf1
+{\par
+}\plain \b \f3
+\fs18
+\cf1
+{for (let i = 1; i <= myNumber; i++) \{\par
+}\plain \b \f3
+\fs18
+\cf1
+{     factorial = factorial * i;\par
+}\plain \b \f3
+\fs18
+\cf1
+{     console.log(factorial);\par
+}\plain \b \f3
+\fs18
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\tx2160
+{    \}}\plain \f1
+\fs2
+\cf1
+{\par
+}\plain \f1
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs22
+\cf1
+{\par
+}\plain \f1
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0\tx2160
+{\tab }\plain \f1
+\fs22
+\cf1
+{6.}{\tab }\plain \f1
+\fs22
+\cf1
+\plain \b \f1
+\fs22
+\cf1
+{Refer to code example 7-1.}\plain \f1
+\fs22
+\cf1
+{ Note the use of console.log() inside the for loop. What is this debugging techn
+ique called?\par
+}\plain \f1
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{Tracing\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{Stepping\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}{Breaking\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}{This is not a standard debugging technique\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs2
+\cf1
+{\par
+}\plain \f1
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f1
+\fs12
+\cf1
+{\par
+}\plain \f1
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f1
+\fs22
+\cf1
+{ANS:\tab }\plain \f1
+\fs22
+\cf1
+{A}\plain \f1
+\fs2
+\cf1
+{\par
+}\plain \f1
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs22
+\cf1
+{\par
+}\plain \f1
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0\tx2160
+{\tab }\plain \f1
+\fs22
+\cf1
+{7.}{\tab }\plain \f1
+\fs22
+\cf1
+\plain \b \f1
+\fs22
+\cf1
+{Refer to code example 7-1.}\plain \f1
+\fs22
+\cf1
+{ This code is meant to calculate the factorial of a number, but does not work as
+ intended. What kind of error does it contain? \par
+}\plain \f1
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{Syntax\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{Logic\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}{Runtime\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}{Numerical\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs2
+\cf1
+{\par
+}\plain \f1
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f1
+\fs12
+\cf1
+{\par
+}\plain \f1
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f1
+\fs22
+\cf1
+{ANS:\tab }\plain \f1
+\fs22
+\cf1
+{B}\plain \f1
+\fs2
+\cf1
+{\par
+}\plain \f1
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs22
+\cf1
+{\par
+}\plain \f1
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f1
+\fs22
+\cf1
+{8.}{\tab }\plain \f1
+\fs22
+\cf1
+{Which of the following statements is true about using Chrome\'92
+s developer tools t
+o debug an app?\par
+}\plain \f1
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{You can display the developer tools by pressing F12.\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{You can\'92
+t use the developer tools to set breakpoints.\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}{The Watch section of the right pane doesn\'92
+t allow you to enter a variable name 
+or an expression that you want to watch.\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}{When the JavaScript engine encounters a breakpoint, there\'92
+s only one way to vie
+w the current data\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs2
+\cf1
+{\par
+}\plain \f1
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f1
+\fs12
+\cf1
+{\par
+}\plain \f1
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f1
+\fs22
+\cf1
+{ANS:\tab }\plain \f1
+\fs22
+\cf1
+{A}\plain \f1
+\fs2
+\cf1
+{\par
+}\plain \f1
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs22
+\cf1
+{\par
+}\plain \f1
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f1
+\fs22
+\cf1
+{9.}{\tab }\plain \f1
+\fs22
+\cf1
+{Which of the following statements is }\plain \b \f1
+\fs22
+\cf1
+{not}\plain \f1
+\fs22
+\cf1
+{ true about testing plans?\par
+}\plain \f1
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{You should test an app with valid input to make sure the results are correct.\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{A common testing problem is not testing a wide enough range of entries.\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}{You rarely need to test an app with invalid entries.\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}{All of these statements are true.\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{e.}{\cell
+}{None of these statements are true.\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs2
+\cf1
+{\par
+}\plain \f1
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f1
+\fs12
+\cf1
+{\par
+}\plain \f1
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f1
+\fs22
+\cf1
+{ANS:\tab }\plain \f1
+\fs22
+\cf1
+{C}\plain \f1
+\fs2
+\cf1
+{\par
+}\plain \f1
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs22
+\cf1
+{\par
+}\plain \f1
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f1
+\fs22
+\cf1
+{10.}{\tab }\plain \f1
+\fs22
+\cf1
+{When the JavaScript engine stops at a breakpoint, what can you }\plain \b \f1
+\fs22
+\cf1
+{not}\plain \f1
+\fs22
+\cf1
+{ do?\par
+}\plain \f1
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{Step through the execution of your code.\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{View the values of variables and constants at that point.\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}{Throw an error for debugging purposes.\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}{You can perform any of these actions.\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs2
+\cf1
+{\par
+}\plain \f1
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f1
+\fs12
+\cf1
+{\par
+}\plain \f1
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f1
+\fs22
+\cf1
+{ANS:\tab }\plain \f1
+\fs22
+\cf1
+{C}\plain \f1
+\fs2
+\cf1
+{\par
+}\plain \f1
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs22
+\cf1
+{\par
+}\plain \f1
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f1
+\fs22
+\cf1
+{11.}{\tab }\plain \f1
+\fs22
+\cf1
+{Why would you use \'93
+View Page Source\'94
+ in Chrome?\par
+}\plain \f1
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{to view the initial HTML for a web page\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{to view changes made by JavaScript to the DOM during runtime\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}{to view the value of variables and constants \cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}{to view the URLs for any links created with JavaScript\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs2
+\cf1
+{\par
+}\plain \f1
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f1
+\fs12
+\cf1
+{\par
+}\plain \f1
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f1
+\fs22
+\cf1
+{ANS:\tab }\plain \f1
+\fs22
+\cf1
+{A\par
+\pard
+}}

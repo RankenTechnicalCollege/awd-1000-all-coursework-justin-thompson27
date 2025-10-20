@@ -1,0 +1,2380 @@
+{\rtf1\ansi \deff0{\fonttbl
+{\f0\froman\fcharset0\fprq2 Times New Roman;
+}{\f1\froman\fcharset0\fprq2 Times New Roman;
+}{\f2\fmodern\fcharset0\fprq1 Courier New;
+}{\f3\fnil\fcharset0\fprq1 Courier New;
+}}{\colortbl;
+\red0\green0\blue0;
+\red0\green0\blue255;
+\red0\green255\blue255;
+\red0\green255\blue0;
+\red255\green0\blue255;
+\red255\green0\blue0;
+\red255\green255\blue0;
+\red255\green255\blue255;
+\red0\green0\blue128;
+\red0\green128\blue0;
+\red128\green0\blue128;
+\red128\green0\blue0;
+\red128\green128\blue0;
+\red128\green128\blue128;
+\red192\green192\blue192;
+}\hyphauto1\deflang1033
+\marglsxn2070\margrsxn1080\margtsxn720\margbsxn1440\cols1\endnhere\colno1\colw9090\pard
+\brdrb\brdrs\brdrw120\brdrcf1
+\nowidctlpar\hyphpar0
+\li-630\ri0\fi0
+\ql\plain \b \f0
+\fs28
+\cf1
+{Chapter 5: How to code functions and handle events\par
+}\plain \b \f0
+\fs28
+\cf1
+{Murach's Modern JavaScript}\plain \f1
+\fs2
+\cf1
+{\par
+}\plain \f1
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs36
+\cf1
+{\par
+}\plain \f1
+\fs36
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li-630\ri0\fi0
+\ql\plain \b \f1
+\fs22
+\cf1
+{MULTIPLE CHOICE}\plain \f1
+\fs2
+\cf1
+{\par
+}\plain \f1
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs22
+\cf1
+{\par
+}\plain \f1
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f1
+\fs22
+\cf1
+{1.}{\tab }\plain \f1
+\fs22
+\cf1
+{Which of the following statements about functions is }\plain \b \f1
+\fs22
+\cf1
+{false}\plain \f1
+\fs22
+\cf1
+{?\par
+}\plain \f1
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{Function declarations can be coded after the statements that call them.\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{JavaScript hoists all function declarations to the top of the scope that calls 
+them.\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}{Anonymous functions must be coded before any statements that call them.\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}{Function declarations cannot return a value.\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs2
+\cf1
+{\par
+}\plain \f1
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f1
+\fs12
+\cf1
+{\par
+}\plain \f1
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f1
+\fs22
+\cf1
+{ANS:\tab }\plain \f1
+\fs22
+\cf1
+{D}\plain \f1
+\fs2
+\cf1
+{\par
+}\plain \f1
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs22
+\cf1
+{\par
+}\plain \f1
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f1
+\fs22
+\cf1
+{2.}{\tab }\plain \f1
+\fs22
+\cf1
+{Which of the following is a valid function declaration for a function named getU
+serAge() that accepts one parameter?  \par
+}\plain \f1
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}\plain \b \f2
+\fs18
+\cf1
+{getUserAge(user);}\plain \f1
+\fs22
+\cf1
+{\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}\plain \b \f2
+\fs18
+\cf1
+{function getUserAge(user) \{\}}\plain \f1
+\fs22
+\cf1
+{\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}\plain \b \f2
+\fs18
+\cf1
+{const getUserAge = function(user) \{\};}\plain \f1
+\fs22
+\cf1
+{\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}\plain \b \f2
+\fs18
+\cf1
+{const getUserAge = user => \{\};}\plain \f1
+\fs22
+\cf1
+{\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs2
+\cf1
+{\par
+}\plain \f1
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f1
+\fs12
+\cf1
+{\par
+}\plain \f1
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f1
+\fs22
+\cf1
+{ANS:\tab }\plain \f1
+\fs22
+\cf1
+{B}\plain \f1
+\fs2
+\cf1
+{\par
+}\plain \f1
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs22
+\cf1
+{\par
+}\plain \f1
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f1
+\fs22
+\cf1
+{3.}{\tab }\plain \f1
+\fs22
+\cf1
+{Which of the following is a valid arrow function for a function named getUserAge
+() that accepts one parameter?  \par
+}\plain \f1
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}\plain \b \f2
+\fs18
+\cf1
+{getUserAge(user);}\plain \f1
+\fs22
+\cf1
+{\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}\plain \b \f2
+\fs18
+\cf1
+{function getUserAge(user) \{\}}\plain \f1
+\fs22
+\cf1
+{\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}\plain \b \f2
+\fs18
+\cf1
+{const getUserAge = function(user) \{\};}\plain \f1
+\fs22
+\cf1
+{\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}\plain \b \f2
+\fs18
+\cf1
+{const getUserAge = user => \{\};}\plain \f1
+\fs22
+\cf1
+{\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs2
+\cf1
+{\par
+}\plain \f1
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f1
+\fs12
+\cf1
+{\par
+}\plain \f1
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f1
+\fs22
+\cf1
+{ANS:\tab }\plain \f1
+\fs22
+\cf1
+{D}\plain \f1
+\fs2
+\cf1
+{\par
+}\plain \f1
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs22
+\cf1
+{\par
+}\plain \f1
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f1
+\fs22
+\cf1
+{4.}{\tab }\plain \f1
+\fs22
+\cf1
+{What does the following code do?\par
+}\plain \f1
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li360\ri0\fi0
+\ql\plain \b \f3
+\fs18
+\cf1
+{const displayError = message => \{\par
+}\plain \b \f3
+\fs18
+\cf1
+{    alert("Error: " + message);\par
+}\plain \b \f3
+\fs18
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li360\ri0\fi0
+\ql\sa120{\};\par
+}\plain \f1
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{calls a function named displayError\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{creates a function and stores it in a constant named displayError\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}{calls a function named message\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}{creates a function named message\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs2
+\cf1
+{\par
+}\plain \f1
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f1
+\fs12
+\cf1
+{\par
+}\plain \f1
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f1
+\fs22
+\cf1
+{ANS:\tab }\plain \f1
+\fs22
+\cf1
+{B}\plain \f1
+\fs2
+\cf1
+{\par
+}\plain \f1
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs22
+\cf1
+{\par
+}\plain \f1
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f1
+\fs22
+\cf1
+{5.}{\tab }\plain \f1
+\fs22
+\cf1
+{When is the DOMContentLoaded event triggered?\par
+}\plain \f1
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{when a script has acquired the control of a web page\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{when a button with the type \'93
+submit\'94
+ is clicked\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}{when all text, pictures, and other media are loaded into the browser\'92
+s cache\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}{when the HTML document object model is loaded and ready to be used\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs2
+\cf1
+{\par
+}\plain \f1
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f1
+\fs12
+\cf1
+{\par
+}\plain \f1
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f1
+\fs22
+\cf1
+{ANS:\tab }\plain \f1
+\fs22
+\cf1
+{D}\plain \f1
+\fs2
+\cf1
+{\par
+}\plain \f1
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs22
+\cf1
+{\par
+}\plain \f1
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\sa120\plain \b \f1
+\fs22
+\cf1
+{Code example 5-1}\plain \b \f2
+\fs18
+\cf1
+{\par
+}\plain \b \f2
+\fs18
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li360\ri0\fi0
+\ql{function add(x, y) \{\par
+}\plain \b \f2
+\fs18
+\cf1
+{    return x + y;\par
+}\plain \b \f2
+\fs18
+\cf1
+{\}\par
+}\plain \b \f2
+\fs18
+\cf1
+{alert(add(5, 3));}\plain \f1
+\fs2
+\cf1
+{\par
+}\plain \f1
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs22
+\cf1
+{\par
+}\plain \f1
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f1
+\fs22
+\cf1
+{6.}{\tab }\plain \f1
+\fs22
+\cf1
+\plain \b \f1
+\fs22
+\cf1
+{Refer to}\plain \f1
+\fs22
+\cf1
+{ }\plain \b \f1
+\fs22
+\cf1
+{code example 5-1}\plain \f1
+\fs22
+\cf1
+{. What does the function in this example do?\par
+}\plain \f1
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{accepts 2 parameters and returns 2 values\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{accepts 2 parameters and returns 1 value\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}{accepts 2 parameters and does not return a value\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}{does not accept a parameter and returns 1 value\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs2
+\cf1
+{\par
+}\plain \f1
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f1
+\fs12
+\cf1
+{\par
+}\plain \f1
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f1
+\fs22
+\cf1
+{ANS:\tab }\plain \f1
+\fs22
+\cf1
+{B}\plain \f1
+\fs2
+\cf1
+{\par
+}\plain \f1
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs22
+\cf1
+{\par
+}\plain \f1
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f1
+\fs22
+\cf1
+{7.}{\tab }\plain \f1
+\fs22
+\cf1
+\plain \b \f1
+\fs22
+\cf1
+{Refer to code example 5-1}\plain \f1
+\fs22
+\cf1
+{. What does the alert() method in this example do?\par
+}\plain \f1
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{displays a dialog box with a value of 8\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{displays a dialog box with a value of 5, 3\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}{displays a dialog box with a value of 53\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}{does not display a dialog box\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs2
+\cf1
+{\par
+}\plain \f1
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f1
+\fs12
+\cf1
+{\par
+}\plain \f1
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f1
+\fs22
+\cf1
+{ANS:\tab }\plain \f1
+\fs22
+\cf1
+{A}\plain \f1
+\fs2
+\cf1
+{\par
+}\plain \f1
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs22
+\cf1
+{\par
+}\plain \f1
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f1
+\fs22
+\cf1
+{8.}{\tab }\plain \f1
+\fs22
+\cf1
+\plain \b \f1
+\fs22
+\cf1
+{Refer to code example 5-1}\plain \f1
+\fs22
+\cf1
+{. Which of the following statements performs the same task as the function in th
+is example?\par
+}\plain \f1
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}\plain \b \f2
+\fs18
+\cf1
+{function add(x, y) return x + y;\cell
+}\row
+\plain \f1
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}\plain \b \f2
+\fs18
+\cf1
+{const add = function(x, y) return x + y;\cell
+}\row
+\plain \f1
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}\plain \b \f2
+\fs18
+\cf1
+{const add = (x, y) => x + y;\cell
+}\row
+\plain \f1
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}\plain \b \f2
+\fs18
+\cf1
+{const add = x, y => x + y;}\plain \f1
+\fs22
+\cf1
+{\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs2
+\cf1
+{\par
+}\plain \f1
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f1
+\fs12
+\cf1
+{\par
+}\plain \f1
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f1
+\fs22
+\cf1
+{ANS:\tab }\plain \f1
+\fs22
+\cf1
+{C}\plain \f1
+\fs2
+\cf1
+{\par
+}\plain \f1
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs22
+\cf1
+{\par
+}\plain \f1
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\sa120\plain \b \f1
+\fs22
+\cf1
+{Code example 5-2\par
+}\plain \b \f1
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li360\ri0\fi0
+\ql\plain \b \f2
+\fs18
+\cf1
+{const tax = .07;\par
+}\plain \b \f2
+\fs18
+\cf1
+{\par
+}\plain \b \f2
+\fs18
+\cf1
+{const getCost = (itemCost, numItems) => \{\par
+}\plain \b \f2
+\fs18
+\cf1
+{\tab }\plain \b \f2
+\fs18
+\cf1
+{const subtotal = itemCost * numItems;\par
+}\plain \b \f2
+\fs18
+\cf1
+{\tab }\plain \b \f2
+\fs18
+\cf1
+{const tax = 0.06;\par
+}\plain \b \f2
+\fs18
+\cf1
+{\tab }\plain \b \f2
+\fs18
+\cf1
+{const total = subtotal + (subtotal * tax);\par
+}\plain \b \f2
+\fs18
+\cf1
+{\tab }\plain \b \f2
+\fs18
+\cf1
+{return total;\par
+}\plain \b \f2
+\fs18
+\cf1
+{\}\par
+}\plain \b \f2
+\fs18
+\cf1
+{\par
+}\plain \b \f2
+\fs18
+\cf1
+{const totalCost = getCost(25.00, 3);\par
+}\plain \b \f2
+\fs18
+\cf1
+{alert("Your cost is $" + totalCost.toFixed(2) + " including a tax of " +\par
+}\plain \b \f2
+\fs18
+\cf1
+{\tab }\plain \b \f2
+\fs18
+\cf1
+{    tax.toFixed(2));}\plain \f1
+\fs2
+\cf1
+{\par
+}\plain \f1
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs22
+\cf1
+{\par
+}\plain \f1
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f1
+\fs22
+\cf1
+{9.}{\tab }\plain \f1
+\fs22
+\cf1
+\plain \b \f1
+\fs22
+\cf1
+{Refer to code example 5-2}\plain \f1
+\fs22
+\cf1
+{. Which constant stores the arrow function? \par
+}\plain \f1
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx4185
+\clvertalt
+\cellx4545
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}\plain \b \f2
+\fs18
+\cf1
+{totalCost\cell
+}\plain \f1
+\fs22
+\cf1
+{c.}{\cell
+}\plain \b \f2
+\fs18
+\cf1
+{itemCost\cell
+}\row
+\plain \f1
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx4185
+\clvertalt
+\cellx4545
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}\plain \b \f2
+\fs18
+\cf1
+{getCost\cell
+}\plain \f1
+\fs22
+\cf1
+{d.}{\cell
+}\plain \b \f2
+\fs18
+\cf1
+{total}\plain \f1
+\fs22
+\cf1
+{\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs2
+\cf1
+{\par
+}\plain \f1
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f1
+\fs12
+\cf1
+{\par
+}\plain \f1
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f1
+\fs22
+\cf1
+{ANS:\tab }\plain \f1
+\fs22
+\cf1
+{B}\plain \f1
+\fs2
+\cf1
+{\par
+}\plain \f1
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs22
+\cf1
+{\par
+}\plain \f1
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f1
+\fs22
+\cf1
+{10.}{\tab }\plain \f1
+\fs22
+\cf1
+\plain \b \f1
+\fs22
+\cf1
+{Refer to code example 5-2}\plain \f1
+\fs22
+\cf1
+{. What is the value of the global constant named tax?\par
+}\plain \f1
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx4185
+\clvertalt
+\cellx4545
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}\plain \b \f2
+\fs18
+\cf1
+{.07\cell
+}\plain \f1
+\fs22
+\cf1
+{c.}{\cell
+}\plain \b \f2
+\fs18
+\cf1
+{4.5\cell
+}\row
+\plain \f1
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx4185
+\clvertalt
+\cellx4545
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}\plain \b \f2
+\fs18
+\cf1
+{.06\cell
+}\plain \f1
+\fs22
+\cf1
+{d.}{\cell
+}\plain \b \f2
+\fs18
+\cf1
+{5.25}\plain \f1
+\fs22
+\cf1
+{\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs2
+\cf1
+{\par
+}\plain \f1
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f1
+\fs12
+\cf1
+{\par
+}\plain \f1
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f1
+\fs22
+\cf1
+{ANS:\tab }\plain \f1
+\fs22
+\cf1
+{A}\plain \f1
+\fs2
+\cf1
+{\par
+}\plain \f1
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs22
+\cf1
+{\par
+}\plain \f1
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f1
+\fs22
+\cf1
+{11.}{\tab }\plain \f1
+\fs22
+\cf1
+\plain \b \f1
+\fs22
+\cf1
+{Refer to code example 5-2}\plain \f1
+\fs22
+\cf1
+{. This code contains an error. What is it? \par
+}\plain \f1
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{You cannot have two constants with the same name in one app.\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{You cannot use the toFixed() method with the result of a function call.\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}{The alert dialog box will display an incorrect value for the tax rate used.\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}{Parameters passed to a function must be variables, not literal values.\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs2
+\cf1
+{\par
+}\plain \f1
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f1
+\fs12
+\cf1
+{\par
+}\plain \f1
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f1
+\fs22
+\cf1
+{ANS:\tab }\plain \f1
+\fs22
+\cf1
+{C}\plain \f1
+\fs2
+\cf1
+{\par
+}\plain \f1
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs22
+\cf1
+{\par
+}\plain \f1
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\plain \b \f1
+\fs22
+\cf1
+{Code example 5-3}\plain \f1
+\fs22
+\cf1
+{\par
+}\plain \f1
+\fs22
+\cf1
+{\par
+}\plain \f1
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li360\ri0\fi0
+\ql\plain \b \f2
+\fs18
+\cf1
+{document.addEventListener("DOMContentLoaded", () => \{\par
+}\plain \b \f2
+\fs18
+\cf1
+{   document.querySelector("#ship_button").addEventListener("click", evt =>\par
+}\plain \b \f2
+\fs18
+\cf1
+{   \{\par
+}\plain \b \f2
+\fs18
+\cf1
+{      evt.preventDefault();\par
+}\plain \b \f2
+\fs18
+\cf1
+{      alert(evt.currentTarget.value);\par
+}\plain \b \f2
+\fs18
+\cf1
+{   \});\par
+}\plain \b \f2
+\fs18
+\cf1
+{\par
+}\plain \b \f2
+\fs18
+\cf1
+{   alert("Welcome to the Calculate Cost page");\par
+}\plain \b \f2
+\fs18
+\cf1
+{\});}\plain \f1
+\fs2
+\cf1
+{\par
+}\plain \f1
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs22
+\cf1
+{\par
+}\plain \f1
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f1
+\fs22
+\cf1
+{12.}{\tab }\plain \f1
+\fs22
+\cf1
+\plain \b \f1
+\fs22
+\cf1
+{Refer to code example 5-3}\plain \f1
+\fs22
+\cf1
+{. What happens as soon as the page that contains the code loads?\par
+}\plain \b \f2
+\fs18
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs22
+\cf1
+{a.}{\cell
+}{It displays a dialog box that contains \'93
+Welcome to the Calculate Cost page\'94
+.\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{It displays a dialog box that contains the text of the HTML element with an id 
+of \'93
+ship_button\'94
+.\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}{It displays two dialog boxes.\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}{Nothing is displayed.\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs2
+\cf1
+{\par
+}\plain \f1
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f1
+\fs12
+\cf1
+{\par
+}\plain \f1
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f1
+\fs22
+\cf1
+{ANS:\tab }\plain \f1
+\fs22
+\cf1
+{A}\plain \f1
+\fs2
+\cf1
+{\par
+}\plain \f1
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs22
+\cf1
+{\par
+}\plain \f1
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f1
+\fs22
+\cf1
+{13.}{\tab }\plain \f1
+\fs22
+\cf1
+\plain \b \f1
+\fs22
+\cf1
+{Refer to code example 5-3}\plain \f1
+\fs22
+\cf1
+{. If the HTML element with the id of \'93
+ship_button\'94
+ is a submit button, what happ
+ens if the user clicks on it?\par
+}\plain \b \f2
+\fs18
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs22
+\cf1
+{a.}{\cell
+}{It displays a dialog box containing \'93
+Welcome to the Calculate Cost page\'94
+.\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{It submits the form and displays a dialog box containing the text of the button
+.\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}{It does not submit the form, but does display a dialog box containing the text 
+of the button.\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}{It submits the form and displays two dialog boxes.\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs2
+\cf1
+{\par
+}\plain \f1
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f1
+\fs12
+\cf1
+{\par
+}\plain \f1
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f1
+\fs22
+\cf1
+{ANS:\tab }\plain \f1
+\fs22
+\cf1
+{C}\plain \f1
+\fs2
+\cf1
+{\par
+}\plain \f1
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs22
+\cf1
+{\par
+}\plain \f1
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f1
+\fs22
+\cf1
+{14.}{\tab }\plain \f1
+\fs22
+\cf1
+{Which of the following function calls will }\plain \b \f1
+\fs22
+\cf1
+{not}\plain \f1
+\fs22
+\cf1
+{ display \'93
+Hello, Steve\'94
+?\par
+}\plain \f1
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li360\ri0\fi0
+\ql\plain \b \f3
+\fs18
+\cf1
+{function displayGreeting(greeting = "Hello", name) \{\par
+}\plain \b \f3
+\fs18
+\cf1
+{  alert(greeting + ", " + name);\par
+}\plain \b \f3
+\fs18
+\cf1
+{\}\par
+}\plain \b \f3
+\fs18
+\cf1
+\par
+\plain \f1
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}\plain \b \f3
+\fs18
+\cf1
+{displayGreeting(, "Steve");}\plain \f1
+\fs22
+\cf1
+{\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}\plain \b \f3
+\fs18
+\cf1
+{displayGreeting("Hello", "Steve");}\plain \f1
+\fs22
+\cf1
+{\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}\plain \b \f3
+\fs18
+\cf1
+{displayGreeting(undefined, "Steve");}\plain \f1
+\fs22
+\cf1
+{\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}\plain \b \f3
+\fs18
+\cf1
+{const greeting = "Hello";\par
+}\plain \b \f3
+\fs18
+\cf1
+{displayGreeting(greeting, "Steve");}\plain \f1
+\fs22
+\cf1
+{\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs2
+\cf1
+{\par
+}\plain \f1
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f1
+\fs12
+\cf1
+{\par
+}\plain \f1
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f1
+\fs22
+\cf1
+{ANS:\tab }\plain \f1
+\fs22
+\cf1
+{A}\plain \f1
+\fs2
+\cf1
+{\par
+}\plain \f1
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs22
+\cf1
+{\par
+}\plain \f1
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\plain \b \f1
+\fs22
+\cf1
+{Code example 5-4}\plain \f1
+\fs22
+\cf1
+{\par
+}\plain \f1
+\fs22
+\cf1
+{\par
+}\plain \f1
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li360\ri0\fi0
+\ql\plain \b \f2
+\fs18
+\cf1
+{function displayAverage(name, ...grades) \{\par
+}\plain \b \f2
+\fs18
+\cf1
+{   let total = 0;\par
+}\plain \b \f2
+\fs18
+\cf1
+{ \par
+}\plain \b \f2
+\fs18
+\cf1
+{   for (let grade of grades) \{\par
+}\plain \b \f2
+\fs18
+\cf1
+{      total += grade;\par
+}\plain \b \f2
+\fs18
+\cf1
+{   \}\par
+}\plain \b \f2
+\fs18
+\cf1
+{   \par
+}\plain \b \f2
+\fs18
+\cf1
+{   alert(`Average score for $\{name\}: $\{total/grades.length\}`);\par
+}\plain \b \f2
+\fs18
+\cf1
+{\}}\plain \f1
+\fs2
+\cf1
+{\par
+}\plain \f1
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs22
+\cf1
+{\par
+}\plain \f1
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f1
+\fs22
+\cf1
+{15.}{\tab }\plain \f1
+\fs22
+\cf1
+\plain \b \f1
+\fs22
+\cf1
+{Refer to code example 5-4}\plain \f1
+\fs22
+\cf1
+{. What will be displayed after running the following statement?\par
+}\plain \f1
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li360\ri0\fi0
+\ql\plain \b \f3
+\fs18
+\cf1
+{displayAverage(1,2,3,4);\par
+}\plain \b \f3
+\fs18
+\cf1
+\par
+\plain \f1
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{Average score for : 2.5\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{Average score for name: 3\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}{Average score for 1: 2\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}{Average score for 1: 3\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs2
+\cf1
+{\par
+}\plain \f1
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f1
+\fs12
+\cf1
+{\par
+}\plain \f1
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f1
+\fs22
+\cf1
+{ANS:\tab }\plain \f1
+\fs22
+\cf1
+{D}\plain \f1
+\fs2
+\cf1
+{\par
+}\plain \f1
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs22
+\cf1
+{\par
+}\plain \f1
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f1
+\fs22
+\cf1
+{16.}{\tab }\plain \f1
+\fs22
+\cf1
+\plain \b \f1
+\fs22
+\cf1
+{Refer to code example 5-4}\plain \f1
+\fs22
+\cf1
+{. What will be displayed after running the following statements?\par
+}\plain \f1
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li360\ri0\fi0
+\ql\plain \b \f3
+\fs18
+\cf1
+{const grades1 = [100, 100, 100];\par
+}\plain \b \f3
+\fs18
+\cf1
+{const grades2 = [80];\par
+}\plain \b \f3
+\fs18
+\cf1
+{displayAverage("Tiffany", ...grades1, ...grades2, 20);\par
+}\plain \b \f3
+\fs18
+\cf1
+\par
+\plain \f1
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{Average score for Tiffany: 80\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{Average score for Tiffany: 95\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}{Average score for Tiffany: 100\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}{Average score for Tiffany: undefined\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f1
+\fs2
+\cf1
+{\par
+}\plain \f1
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f1
+\fs12
+\cf1
+{\par
+}\plain \f1
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f1
+\fs22
+\cf1
+{ANS:\tab }\plain \f1
+\fs22
+\cf1
+{A\par
+\pard
+}}
