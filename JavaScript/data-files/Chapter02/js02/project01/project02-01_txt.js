@@ -10,12 +10,31 @@
  */
 
 
-      FahrenheitToCelsius(degree)
+      function FahrenheitToCelsius(degree)
       {
-            return degree - 32 % 1.8;
+             
+            return (degree - 32)/1.8;
       }
 
-      CelsiusToFahrenheit(degree)
+      function CelsiusToFahrenheit(degree)
       {
-            return degree * 1.8 + 32;
+          
+            return  degree * 1.8 + 32;
+      }
+
+      document.getElementById('cValue').onchange = function()
+      {
+
+            let cDegree = cValue.value;
+            document.getElementById('fValue').value = CelsiusToFahrenheit(cDegree);
+
+      }
+
+
+       document.getElementById('fValue').onchange = function()
+      {
+
+            let fDegree = fValue.value;
+            document.getElementById('cValue').value = FahrenheitToCelsius(fDegree);
+
       }
