@@ -1,1 +1,5 @@
 /* transparent carousel */
+.carousel-inner{
+background:  rgba(128, 128, 128, 0.5); /* Semi-transparent gray */
+}
+ 
