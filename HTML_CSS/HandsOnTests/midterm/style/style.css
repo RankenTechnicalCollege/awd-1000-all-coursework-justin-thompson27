@@ -1,15 +1,15 @@
-/* transparent carousel */
+/* Make transparent Carousel */
 .img-transparent {
-/* background-color: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)); /* Semi-transparent gray */ 
- /*  background-color: hsla(240, 100%, 50%, 0.7); */ /* 70% opaque blue background */
-   opacity: 0.6; /* Adjust for desired transparency */
+
+   opacity: 0.6; 
 }
 
+/* Smooth Scrolling */
 html {
   scroll-behavior: smooth;
 }
 
-
+/* Media breakpoints for responsive-text */
 @media screen and (max-width: 576px) {
     
     .my-responsive-text {

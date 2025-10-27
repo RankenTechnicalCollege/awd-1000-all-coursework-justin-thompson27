@@ -3,9 +3,14 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Belleville Running Club</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="style/style.css">
+    <!-- Icons -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+	  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+	  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+	  <link rel="icon" sizes="192x192" href="images/android-chrome-192x192.png">
   </head>
   <body>
     <header class="sticky-top">
@@ -13,9 +18,9 @@
 
        <!-- Bootstrap Navigation bar -->
     <nav class="navbar navbar-expand-sm navbar-light bg-light py-3">
+        <!-- Nav Brand -->
        <a class="navbar-brand text-success-emphasis mx-5" href="#">BELLEVILLE RUNNING CLUB</a>
-      <!-- <div class="container-fluid">
-        -->
+      
       
       <!-- Hamburger menu -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,18 +45,18 @@
             </li>
             
           </ul>
-        </div>  
+        </div>
      <!--  </div> -->
     </nav>
 
     </header>
-     <!-- Banner Area -->
-     <main class="container-fluid mx-0 p-0  ">
+     <!-- Carousel Area -->
+    <main class="container-fluid mx-0 p-0  ">
       <section id="home">
         <div id="carouselBRC" class="carousel slide  " data-bs-ride="carousel">
           <div class="carousel-inner position-relative  ">
             <div class="carousel-item active " data-bs-interval="5000">
-              <img src="images/keepmoving.png" class="img-transparent  d-block w-100 h-100  " alt="...">
+              <img src="images/keepmoving.png" class="img-transparent  d-block w-100 h-100  " alt="">
             </div>
             <div class="carousel-item" data-bs-interval="5000">
               <img src="images/caropic2.png" class=" img-transparent d-block w-100  h-100  " alt="...">
@@ -59,28 +64,20 @@
             <div class="carousel-item" data-bs-interval="5000">
               <img src="images/caropic3.png" class="img-transparent  d-block w-100  h-100   " alt="...">
             </div>
+            <!-- Text in center of Carousel -->
             <div class="container-fluid position-absolute top-50  start-50 translate-middle carousel-caption  justify-content-center align-items-center my-responsive-text ">
-                <p class="text-dark">A CLUB OF RUNNERS IN BELLEVILLE, ILLINOIS</p>
+                <h1 class="text-dark fw-bold fst-italic ">A CLUB OF RUNNERS IN BELLEVILLE, ILLINOIS</h1>
                 <ul class="list-unstyled">
-                  <li><a class= "text-center btn btn-success btn mb-3 " role="button" href="https://runsignup.com/MemberOrg/BellevilleRunningClub/Register" target="_blank">JOIN OR RENEW YOUR BRC MEMBERSHIP</a></li>
+                  <li><a class="text-center btn btn-success mb-3 " role="button" href="https://runsignup.com/MemberOrg/BellevilleRunningClub/Register" target="_blank">JOIN OR RENEW YOUR BRC MEMBERSHIP</a></li>
                   <li><a class=" text-center btn btn-success btn-lg" role="button" href="https://teamlocker.squadlocker.com/#/lockers/belleville-running-club" target="_blank">BUY BRC GEAR</a></li>
                 </ul>
             </div>
           </div>
-        <!--   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button> -->
         </div>
-       
       </section>
+      <!-- Membership benefits -->
       <section id="membership" class="container-fluid py-5 bg-info">
-       
-          <div class="text-center my-responsive-text ">  
+          <div class="text-center my-responsive-text ">
             <h5 class="fw-bold" >Membership benefits include:</h5>
               <ul class="list-unstyled text-success-emphasis">
                 <li>Discounts on regional races, on BRC gear, and at sports-related retailers</li>
@@ -91,18 +88,16 @@
               </ul>
           </div>
       </section>
-    
-
-
-
+      <!-- Weekly Group Runs -->
       <section id="weekly" class=" container-fluid justify-content-center align-items-center py-5 mx-0 px-0 w-100 bg-success">
         <div class="row my-responsive-text">
             <div class="col-lg-12">
               <div class="text-center">
                  <h1>Weekly Group Runs</h1>
                  <h2>WE MEET TWICE PER WEEK ON THURSDAY EVENINGS AND SATURDAY MORNINGS.</h2>
-                
+                 <!-- Google Map -->
                 <iframe class="w-75 mx-auto" src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d3121.833184920978!2d-89.982815!3d38.514558!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzjCsDMwJzUyLjQiTiA4OcKwNTgnNTMuNSJX!5e0!3m2!1sen!2sus!4v1710269364337!5m2!1sen!2sus" height="450" allowfullscreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                <!-- Address for running -->
                 <div class="d-flex justify-content-around">
                   <div class="col px-1">
                     <h2>Thursday Evenings at 6PM CST - 3 & 5 mile options</h2>
@@ -116,47 +111,43 @@
                     <p class="fst-italic">732 S Illinois St, Belleville, IL 62220</p>
                   </div>
                 </div>
+                <!-- Mile Links -->
                  <div id="mile-links" class="text-center fw-bold">
-                 <a class="text-info text-decoration-none" href="https://www.mapmyrun.com/routes/view/10951380" target="_blank">Learn our 3 Mile Route here!</a>
+                 <a class=" btn btn-info btn-lg fw-bold mb-3" href="https://www.mapmyrun.com/routes/view/10951380" target="_blank" role="button">Learn our 3 Mile Route here!</a>
                  <br>
-                 <a class="text-info fw-bold text-decoration-none " href="https://www.strava.com/routes/793981" target="_blank">Learn our 5 Mile Route here!</a>
+                 <a class="btn btn-info btn-lg fw-bold  " href="https://www.strava.com/routes/793981" target="_blank">Learn our 5 Mile Route here!</a>
                  </div>
             </div>
           </div>
         </div>
-   
-
       </section>
-
-
-        <section id="couch" class="container-fluid w-lg-100 bg-info text-center mx-0  pt-3 pb-5 text-success-emphasis my-responsive-text">
-
-
-          <h3>Spring 2025 Couch 2 5K Training</h3>
-           <ul class="list-unstyled">
-                <li>Start date of February 18th 2026</li>
-                <li>Trains individuals to complete the <span><a class=" fw-bold text-decoration-none text-dark" href="http://www.lawdayrun.com" target="_blank">Law Day Run</a></span> in Belleville, Illinois.</li>
-                <li>Tuesdays 6 p.m. at Belleville East High School</li>
-                <li>Sundays 10:30 a.m. at Southside Park.</li>
-           </ul>
-          <div class="row mx-auto">
-
-             <div class="col-lg-3">
+      <!-- Spring Couch 2 5k Training -->
+      <section id="couch" class="container-fluid w-lg-100 bg-info text-center mx-0  pt-3 pb-5 text-success-emphasis my-responsive-text">
+        <h3>Spring 2025 Couch 2 5K Training</h3>
+          <ul class="list-unstyled">
+              <li>Start date of February 18th 2026</li>
+              <li>Trains individuals to complete the <span><a class=" fw-bold text-decoration-none text-dark" href="http://www.lawdayrun.com" target="_blank">Law Day Run</a></span> in Belleville, Illinois.</li>
+              <li>Tuesdays 6 p.m. at Belleville East High School</li>
+              <li>Sundays 10:30 a.m. at Southside Park.</li>
+          </ul>
+        <!-- Tiers -->
+        <div class="row mx-auto">
+            <div class="col-lg-3">
               <p class="fw-bold">Tier 1 - $20</p>
               <ul class="list-unstyled fst-italic">
                 <li>Weekly Group Training Sessions</li>
                 <li>C25K Completion T-Shirt</li>
               </ul>
-               <a role="button" class="btn btn-success btn-lg" href="https://square.link/u/6qMNTcN6" target="_blank">BUY TIER 1</a>
+              <a role="button" class="btn btn-success btn-lg" href="https://square.link/u/6qMNTcN6" target="_blank">BUY TIER 1</a>
             </div>
             <div class="col-lg-3 bg-light-blue">
-             <p class="fw-bold">Tier 2 - $30</p>
+              <p class="fw-bold">Tier 2 - $30</p>
               <ul class="list-unstyled fst-italic">
                 <li>1 year Belleville Running Club Membership</li>
                 <li>Weekly Group Training Sessions</li>
                 <li>C25K Completion T-Shirt</li>
               </ul>
-               <a role="button" class="btn btn-success btn-lg" href="https://square.link/u/LuYguBmM" target="_blank">BUY TIER 2</a>
+                <a role="button" class="btn btn-success btn-lg" href="https://square.link/u/LuYguBmM" target="_blank">BUY TIER 2</a>
             </div>
             <div class="col-lg-3">
               <p class="fw-bold">Tier 3 - $55</p>
@@ -166,9 +157,9 @@
                 <li>Weekly Group Training Sessions</li>
                 <li>C25K Completion T-Shirt</li>
               </ul>
-               <a role="button" class="btn btn-success btn-lg" href="https://square.link/u/KPGh3iJK" target="_blank">BUY TIER 3</a>
-            </div>
-            <div class="col-lg-3 bg-light-blue">
+                <a role="button" class="btn btn-success btn-lg" href="https://square.link/u/KPGh3iJK" target="_blank">BUY TIER 3</a>
+             </div>
+             <div class="col-lg-3 bg-light-blue">
               <p class="fw-bold">Tier 4 - $75(Limited Availability)</p>
               <ul class="list-unstyled fst-italic">
                 <li>Personalized Training Plan</li>
@@ -177,24 +168,18 @@
                 <li>Weekly Group Training Sessions</li>
                 <li>C25K Completion T-Shirt</li>
               </ul>
-               <a role="button" class="btn btn-success btn-lg" href="https://square.link/u/Y9eScUl4" target="_blank" >BUY TIER 4</a>
-            </div>
-
-
-          </div>
-           
-          </section>
-
-      </main>
-     <footer class="jumbotron-fluid text-center bg-primary p-3">
-       
+              <a role="button" class="btn btn-success btn-lg" href="https://square.link/u/Y9eScUl4" target="_blank" >BUY TIER 4</a>
+              </div>
+         </div>
+      </section>
+    </main>
+      <!-- Footer -->
+     <footer class="jumbotron-fluid text-center bg-success p-3">
         <div class="container text-white">
             <p>&copy; Copyright 2025 Belleville Running Club</p>
-            
         </div>
-        
-    </footer>  
-    
+    </footer>
+    <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   </body>
 </html>
