@@ -28,12 +28,11 @@ captions[13]="The ISS over the Ionian Sea [2007]";
 let htmlCode = "";
 
 for (let i = 0; i < captions.length; i++) {
-     htmlCode = 
-     `<figure>
-     <img alt ='' src='slide[i].jpg' />
-     <figcaption> caption[i]</figcaption>
-     </figure> 
-      `
+     htmlCode += "<figure>";
+     htmlCode += "<img alt ='' src='slide" + [i] + ".jpg'/>";
+     htmlCode += "<figcaption>" + captions[i] + "</figcaption>";
+     htmlCode += "</figure>";
+    
 }
 
 document.getElementById("gallery").innerHTML = htmlCode;
