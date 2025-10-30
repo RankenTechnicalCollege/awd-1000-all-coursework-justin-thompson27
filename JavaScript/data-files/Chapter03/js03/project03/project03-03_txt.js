@@ -63,14 +63,15 @@ let htmlCode = "";
 
 for (let i = 0; i < titles.length; i++) {
       htmlCode += "<tr>";
-      htmlCode += "<td><a href='" + links[i] +"'>" + titles[i] + "<a/><td>";
+      htmlCode += "<td><a href='" + links[i] +"'>" + titles[i] + "<a/></td>";
       htmlCode += "<td>" + summaries[i] + "</td>";
       htmlCode += "<td>" + ratings[i] + "</td>";
       htmlCode += "</tr>";
-
 }
 
-let tableBody = document.getElementsByTagName("tbody");
+let tableBody = document.getElementsByTagName("tbody")[0];
+tableBody.innerHTML = htmlCode;
+console.log(tableBody);
 
 
 

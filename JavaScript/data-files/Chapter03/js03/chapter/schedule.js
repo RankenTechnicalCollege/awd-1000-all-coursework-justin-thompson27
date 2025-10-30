@@ -4,8 +4,8 @@
 
       Tipton Turbines
       Baseball Schedule Data
-      Author: 
-      Date:   
+      Author: Justin Thompson
+      Date:   10/30/25
 
       Filename: schedule.js
 */
