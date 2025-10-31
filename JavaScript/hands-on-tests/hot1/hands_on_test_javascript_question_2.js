@@ -23,7 +23,7 @@ function verifyAge() {
   else if(parseInt(answer) >= 21 && parseInt(answer) < 200){
     window.alert("Welcome to the venue!");
   }
-  else if(parseInt(answer) < 21 && parseInt(answer) > 1){
+  else if(parseInt(answer) < 21 && parseInt(answer) >= 1){
     window.alert("You're not old enough!");
   } 
   else if(parseInt(answer) < 1 || parseInt(answer) > 200){
