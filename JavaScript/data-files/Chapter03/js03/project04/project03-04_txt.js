@@ -3,8 +3,8 @@
       Project 03-04
 
       Application to write a list of customer reviews
-      Author: 
-      Date:   
+      Author: Justin Thompson
+      Date:   11/02/2025
 
       Filename: project03-04.js
 */
@@ -21,3 +21,37 @@ let reviews = [
 ];
 let reviewTitles = ["My Favorite Workout Game", "Poor Choreography", "Buggy with Poor Tech Support", "Nice Improvement"];
 
+function starImages(rating){
+      let imageText = "";
+      for (let i = 1; i <= rating; i++) {
+            imageText += "<img src='star.png' alt=''>";
+            
+      }
+      return imageText;
+
+      
+}
+
+for (let i = 0; i < reviewers.length; i++) {
+            let reviewCode = "";
+
+            if (reviewType[i] === "P") {
+                  reviewCode += "<table class = 'prime'>";
+                  
+            } else if(reviewType[i] ==="N" ){
+                  reviewCode += "<table class = 'new'>";
+                  
+            }
+            else{
+                  reviewCode += "<table>";
+                  
+            }
+            reviewCode += "<caption>" + reviewTitles[i] + " </caption>";
+            reviewCode += "<tr><th>By</th><td>" + reviewers[i] + "</td></tr>";
+            reviewCode += "<tr><th>Review Date</th><td>" + reviewDates[i] + "</td></tr>";
+            reviewCode += "<tr><td colspan='2'>" + reviews[i] + "</td></tr>";
+            reviewCode += "</table>";
+           document.getElementsByTagName("article")[0].insertAdjacentHTML('beforeend', reviewCode);
+           
+          
+      }
