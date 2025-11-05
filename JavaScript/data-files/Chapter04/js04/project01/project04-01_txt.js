@@ -1,17 +1,18 @@
+"use Strict";
 /*    JavaScript 7th Edition
       Chapter 4
       Project 04-01
 
       Application to calculate total moving cost
-      Author: 
-      Date:   
+      Author: Justin Thompson
+      Date:   11/5/25
 
       Filename: project04-01.js
 */
 
 // Global Constants
-const COST_PER_LB = 50;
-const COST_PER_MILE = 75;
+const COST_PER_LB = 0.50;
+const COST_PER_MILE = 0.75;
 const SETUP_COST = 500;
 
 // Global Variables
@@ -25,16 +26,44 @@ document.getElementById("wgtBox").onchange = calcTotal;
 document.getElementById("distBox").onchange = calcTotal;
 document.getElementById("setupBox").onclick = calcTotal;
 
+
+
 // Function to calculate an estimate of the total moving cost
 function calcTotal() {
    let totalCost = 0;      // Set the initial estimate to $0
    msgBox.innerHTML = "";  // Erase any warnings in the message box
    
+   try {
+      if (!(wgtBox.value > 0)) {
+         throw "!!Enter a positive weight";
+         
+         
+      }
+      else{
+          totalCost += wgtBox.value * COST_PER_LB;      
 
-      totalCost += wgtBox.value * COST_PER_LB;      
+      }
+      
+   } catch (error) {
+      msgBox.innerHTML = error;
+      
+   }
+   try {
+      if (!(distBox.value > 0)) {
+         throw "!!Enter a positive mileage";
+         
+      }
+      else{
+       totalCost += distBox.value * COST_PER_MILE;  
+       
+      }
+   } catch (error) {
+      msgBox.innerHTML = error;
 
+      
+   }
 
-      totalCost += distBox.value * COST_PER_MILE;   
+     
   
    
    if (document.getElementById("setupBox").checked) {
