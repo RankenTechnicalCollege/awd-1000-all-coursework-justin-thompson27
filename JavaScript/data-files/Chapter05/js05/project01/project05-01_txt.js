@@ -4,11 +4,13 @@
       Project 05-01
 
       Project to present an online quiz with a countdown clock
-      Author: 
-      Date:   
+      Author: Justin Thompson
+      Date:   11/12/25
 
       Filename: project05-01.js
 */
+
+
 
 // Constants to set the time given for the quiz in seconds
 // and the correct answers to each quiz question
@@ -26,8 +28,21 @@ let timeLeft = quizTime;
 
 // Declare the ID for timed commands
 // and the node list for questions
+let timeID;
 
+let questionList = querySelectorAll("div#quiz input");
+startQuiz.onclick = function(){
+   overlay.className = "showquiz";
+   let timeID = setInterval(countdown, 1000)
+}
 
+function countdown(){
+   if (timeLeft === 0) {
+      let totalCorrect 
+   } else {
+      
+   }
+}
 
 
 
