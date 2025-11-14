@@ -4,8 +4,8 @@
       Project 05-05
 
       Project to create a Concentration game with flipping tiles
-      Author: 
-      Date:   
+      Author: Justin Thompson
+      Date:   11/14/25
 
       Filename: project05-05.js
 */
@@ -40,7 +40,7 @@ function scrambleTiles() {
       let randomIndex = Math.floor(allTiles.length*Math.random());
       
       // Randomly insert a tile before the current tile in the loop
-      board.insert(board.children[i], board.children[randomIndex]);      
+      board.insertBefore( board.children[randomIndex], board.children[i]);      
    }
 }
 
@@ -53,20 +53,23 @@ function playConcentration() {
       // Run when a tile is clicked
       allTiles[i].onclick = function() {
          // Test to see if the back of the tile is displayed
-         if (This.lastElementChild.className = "back") {
+         if (this.lastElementChild.className === "back") {
             
             tilesFlipped++;  // increase the flip count by 1
-            
-            if (tilesFlipped = 1) {
+            console.log(tilesFlipped);
+            if (tilesFlipped === 1) {
                // if this is the first tile clicked then flip it
-               firstFlipped = This;
+               firstFlipped = this;
                firstFlipped.appendChild(firstFlipped.firstElementChild);
-            } else if (tilesFlipped = 2) {
+               
+            } else if (tilesFlipped === 2) {
                // if this is the second tile clicked then flip it
                // and then flip both tiles back after 1 second
-               secondFlipped = This;
+               secondFlipped = this;
                secondFlipped.appendChild(secondFlipped.firstElementChild);
-               timeID = window.setTimeout(flipBack, 1);
+               timeID = window.setTimeout(flipBack, 1000);
+             
+
             }
          }
       }
@@ -83,7 +86,7 @@ function playConcentration() {
       }
       
       // Reset the tiles flipped counter to zero
-      titlesFlipped = 0;
+      tilesFlipped = 0;
    }   
 }
 

@@ -38,7 +38,8 @@ startQuiz.onclick = function(){
 
 function countdown(){
    if (timeLeft === 0) {
-      let totalCorrect 
+      timeID.clearInterval();
+      let totalCorrect = checkAnswers();
    } else {
       
    }
