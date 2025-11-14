@@ -84,12 +84,22 @@
          cells[1].innerHTML = (itemTotal / 100).toFixed(2);
          cells[3].innerHTML = (tax / 100).toFixed(2);
          cells[5].innerHTML = "$" + (totalWithTax / 100).toFixed(2);
+
+       //Clear the items checked
+       for (let i = 0; i < 5; i++) {
+         if (items[i].checked) {
+          items[i].checked = false;
+          }
+       }
       }
       
       // add event listener to Submit button
       var submitButton = document.getElementById("sButton");
       //There should be a a closing quotation after click
       submitButton.addEventListener("click", calcTotal); 
+     
+      
+     
       
       //Adding the Date to the body element
       let date = new Date("Sun Nov 16 2025");
