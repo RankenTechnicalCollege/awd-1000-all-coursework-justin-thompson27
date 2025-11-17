@@ -4,8 +4,8 @@
       Project 06-01
 
       Project to validate a form used for setting up a new account
-      Author: 
-      Date:   
+      Author: Justin Thompson
+      Date:   11/17/25
 
       Filename: project06-01.js
 */
