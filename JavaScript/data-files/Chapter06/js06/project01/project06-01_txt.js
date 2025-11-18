@@ -17,7 +17,7 @@ let pwd2 = document.getElementById("pwd2");
 submitButton.addEventListener("click", function(){
 
 
-      if (condition) {
+      if (pwd) {
             
       } else {
             
