@@ -10,3 +10,16 @@
       Filename: project06-01.js
 */
 
+let submitButton = document.getElementById("submitButton");
+let pwd = document.getElementById("pwd");
+let pwd2 = document.getElementById("pwd2");
+
+submitButton.addEventListener("click", function(){
+
+
+      if (condition) {
+            
+      } else {
+            
+      }
+})
