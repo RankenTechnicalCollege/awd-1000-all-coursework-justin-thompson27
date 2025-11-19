@@ -1,4 +1,4 @@
-"use strict";
+ "use strict";
 /*    JavaScript 7th Edition
       Chapter 6
       Project 06-02
@@ -11,3 +11,17 @@
 */
 
 
+document.addEventListener("load", function(){
+
+let allSelect = document.querySelectorAll("form#govLinks select");
+
+
+for (let i = 0; i < allSelect.length; i++) {
+      allSelect[i].onChange =  function(evt){
+            let linkURL = evt.target.value;
+            let newWin = window.open(linkURL);
+      }
+      
+}
+
+})
