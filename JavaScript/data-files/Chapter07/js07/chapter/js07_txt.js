@@ -18,10 +18,121 @@
 
 
 
+document.getElementById("getFile").onchange = function(){
+
+
+      //Retrieve info about the selected file
+      let userFile = this.files[0];
+
+      //Verify that a text file is selected
+      try {
+            let isText = userFile.type.startsWith("text");
+            if (!isText) {
+                  throw userFile.name + "is not a text file";
+                  
+            }
+      
+
+            //Read the contents of the selected file
+            let fr = new FileReader();
+            fr.readAsText(userFile);
+
+            //Once file has finished loading, display in the page
+            let sourceDoc = document.getElementById("wc_document");
+            fr.onload = function(){
+                  sourceDoc.innerHTML = fr.result;
+                   //Store the text of the document, remove the html tags
+                   let sourceText = sourceDoc.textContent;
+
+
+                   //Generate the word cloud
+                  wordCloud(sourceText);
+            }
+
+          
+      }
+
+      //Alert the user  to select a text file
+      catch(err){
+            window.alert(err);
+      }
+
+  
+
+      function wordCloud(sourceText){
+
+            //Convert the source text to lowercase
+            //and remove leading and trailing whitespace
+            sourceText = sourceText.toLowerCase();
+            sourceText = sourceText.trim();
+            //Leave only Alphabet characters and whitespaces in the text
+            let alphaRegx =  /[^a-zA-Z\s]/g;
+            sourceText = sourceText.replace(alphaRegx, "");
+            //Remove stop words from the text
+            for (let i = 0; i < stopWords.length; i++) {
+                  let stopRegx = new RegExp("\\b"+stopWords[i]+"\\b","g");
+                  sourceText = sourceText.replace(stopRegx, "");
+                  
+            }
+
+            let words = sourceText.split(/\s+/g);
+            words.sort();
+            //Create a 2d arrary in which each item is array
+            //contaning a word and it's duplicate count
+            let unique = [ [words[0],1] ];
+
+            //Keep an index of the unique words
+
+            let uniqueIndex = 0;
+
+            for (let i = 1; i < words.length; i++) {
+                 if (words[i] === words[i-1]) {
+                  //increase the duplicate count by one
+                  unique[uniqueIndex] [1]++;
+                 }
+                  else{
+                        //Add a new word to the unique array
+                        uniqueIndex++;
+                        unique[uniqueIndex] = [words[i],1];
+                  }
+                  
+            } 
+                 
+              unique.sort(byDuplicate);
+                  function byDuplicate(a,b){
+                        return b[1] - a[1];
+            }
+
+            //Keep the top 100 words
+
+            unique = unique.slice(0, 100);
+
+            let maxCount = unique[0][1];
+
+            unique.sort();
+
+            //Reference the word cloud box
+            let cloudBox = document.getElementById("wc_cloud");
+            cloudBox.innerHTML = "";
+
+
+            //Size each word based on it's usage
+            for (let i = 0; i < unique.length; i++) {
+                  let word = document.createElement("span");
+                  word.textContent = unique[i][0];
+                  word.style.fontSize = unique[i][1]/maxCount + "em";
+                  cloudBox.appendChild(word);
+                  
+            }
+
+            console.log(unique); 
+            
+           
+      }
 
 
 
-
+}
 
 
 
