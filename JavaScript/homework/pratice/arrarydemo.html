@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+  <h1>College</h1>
+  <p>Manage your drink menu live on screen!</p>
+
+  <div id="menu">
+    <h2>Current Drink Menu</h2>
+    <ul id="drinkList">
+
+    </ul>
+  </div>
+  <div class="controls">
+    <input type="text" id="newDrink" placeholder="Add new drink...">
+    <button onclick="addDrink()">Add Drink</button>
+  </div>
+
+  <div class="controls">
+    <input type="text" id="removeDrink" placeholder="Remove drink...">
+    <button onclick="removeDrink()">Remove Drink</button>
+  </div>
+
+  <div class="controls">
+    <input type="text" id="oldDrink" placeholder="Current name...">
+    <input type="text" id="editedDrink" placeholder="New name...">
+    <button onclick="editDrink()">Edit Drink</button>
+  </div>
+
+  <!-- Display initial menu on page load -->
+  <script src="arrarydemo.js"></script>
+</body>
+</html>
