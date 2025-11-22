@@ -4,8 +4,8 @@
       Project 06-04
 
       Project to turn a selection list into a selection of hypertext links
-      Author: 
-      Date:   
+      Author: Justin Thompson
+      Date:   11/22/25
 
       Filename: project06-04.js
 */
@@ -60,3 +60,38 @@ model.onchange = function() {
    }     
 }
 
+function showAll(selectList){
+
+   let options = selectList.options;
+   let optionLength = options.length;
+
+   for (let i = 0; i < options.length; i++) {
+                  options[i].style.display = "block";
+      
+   }
+
+}
+
+function filterSelect(selectList , category){
+
+   let options = selectList.options;
+    let optionLength = options.length;
+
+   for (let i = 0; i < options.length; i++) {
+                 if (options[i].className === category) {
+                   options[i].style.display = "block";
+                 }
+                 else{
+                  options[i].style.display = "none";
+                 }
+      
+   }
+}
+
+selectVehicle.onclick = function(){
+
+   let modelIndex = model.selectedIndex;
+   let makeIndex = make.selectedIndex;
+   let trimIndex = trim.selectedIndex;
+   vehicle.innerHTML = model.options[modelIndex].text + ""  + make.options[makeIndex].text + "" + trim.options[trimIndex].text;
+}
