@@ -4,8 +4,8 @@
       Project 07-02
 
       Project to deal cards from a shuffled poker deck
-      Author: 
-      Date:   
+     Author: Justin Thompson
+      Date:   11/24/25
 
       Filename: project07-02.js
 */
@@ -29,7 +29,23 @@ let deck = [];
 
 document.getElementById("deal").onclick = function() {   
    
+      function newDeck(){
+           deck =  deckStr.split(",");
+           deck.sort(shuffle);
+           function shuffle(a , b){
+            return 0.5 - Math.random();
 
+           }
+      }
+
+      for (let i = 0; i < cards.length; i++) {
+            if (deck.length === 0) {
+                  newDeck();
+            }
+            cards[i].textContent = deck.pop();
+            cardsLeft.textContent = deck.length;
+            
+      }
 }
 
             

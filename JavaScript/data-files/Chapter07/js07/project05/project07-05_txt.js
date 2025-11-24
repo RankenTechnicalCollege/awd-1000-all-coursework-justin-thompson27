@@ -4,16 +4,16 @@
       Project 07-05
 
       Project to compare the distribution of word lengths between two authors
-      Author: 
-      Date:   
+      Author: Justin Thompson
+      Date:   11/24/25
 
       Filename: project07-05.js
 */
 
 // Onchange event handler to load an external file for author 1
-document.getElementById("button1").onchange = function() {
+document.getElementById("button1").onchange =  function() {
    // Retrieve the selected file for author 1
-   let file = this.file[0];
+   let file = this.files[0];
    let doc = document.getElementById("document1");
    let count = document.getElementById("count1");
    
@@ -22,9 +22,9 @@ document.getElementById("button1").onchange = function() {
 };
 
 // Onchange event handler to load an external file for author 2
-document.getElementById("button2").onchange = function() {
+document.getElementById("button2").onchange =  function() {
    // Retrieve the selected file for author 2
-   let file = this.file[0];
+   let file = this.files[0];
    let doc = document.getElementById("document2");
    let count = document.getElementById("count2");
    
@@ -38,29 +38,29 @@ document.getElementById("button2").onchange = function() {
 
 function generateWordFreq(inputFile, outputDoc, outputCount) {
    // Read the contents of the selected file
-   let fr = new Reader();
-   fr.read(inputFile); 
+   let fr = new FileReader();
+   fr.readAsText(inputFile); 
 
    // Once the file has finished loading, display the document in the page
    fr.onload=function() { 
       outputDoc.innerHTML = fr.result;
       
       // Store the text content of the output document
-      let sourceText = outputDoc.innerHTML;
+      let sourceText = outputDoc.textContent.trim();
       
       // Remove any character that is not alphabetic or whitespace
-      let alphaRegx = "/[^a-zA-Z\s]/g";
+      let alphaRegx = /[^a-zA-Z\s]/g;
       sourceText = sourceText.replace(alphaRegx, "");  
 
       // Split the text into an array at each occurence of one or more whitespace characters
-      let words = sourceText.split(/\s+/); 
+      let words = sourceText.split(/\s+/g); 
 
       // Initial frequency array for words of 1 to 15 characters in length
       // Setting their initial counts to 0.
       let freqs = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 
       // Loop through every word in the words array
-      for (let i = 0; i <= words.length; i++) {
+      for (let i = 0; i < words.length; i++) {
          
          // If a word has 15 or more characters, add it to the count
          // of words in the array with index 15
@@ -82,7 +82,7 @@ function generateWordFreq(inputFile, outputDoc, outputCount) {
       for (let i = 1; i <= 15; i++) {
          // Calculate the percent of words of each length
          // Display the frequency to 1 decimal place
-         let percent = (totalWords/freqs[i]*100).toFixed(1)+"%"
+         let percent = (freqs[i]/totalWords*100).toFixed(1)+"%"
          outputPara[i - 1].textContent = percent;
       }      
       
