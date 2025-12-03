@@ -26,6 +26,7 @@ let box = {
 
 
 function Ball(size) {
+   console.log("size");
   this.radius = size;
   this.xPos = null;
   this.yPos = null;
@@ -49,6 +50,9 @@ Ball.prototype.moveWithin = function(container){
          container.xPos += this.xVelocity;
          this.xVelocity = -this.xVelocity
       }
+
+      this.yPos += this.yVelocity;
+      this.xPos += this.xVelocity;
 };
 
 
@@ -77,7 +81,18 @@ addBall.onclick = function() {
    // Append the ball image to the box
    boxImage.appendChild(ballImage);     
    
-   
+   let newBall = new Ball(BALL_RADIUS);
+   newBall.yPos = (BOX_HEIGHT - BALL_RADIUS)/2;
+   newBall.xPos = (BOX_WIDTH - BALL_RADIUS)/2;
+   newBall.xVelocity = rand(-10, 10);
+   newBall.yVelocity = rand(-10, 10);
+   window.setInterval(function(){
+      newBall.moveWithin(box);
+      ballImage.style.top = newBall.yPos + "px";
+      ballImage.style.left = newBall.xPos + "px";
+      boxImage.style.top = box.yPos + "px";
+      boxImage.style.left = box.xPos + "px";
+   },25)
    
 };
 
