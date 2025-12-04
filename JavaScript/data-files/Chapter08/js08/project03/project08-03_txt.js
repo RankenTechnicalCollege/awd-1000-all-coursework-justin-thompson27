@@ -23,12 +23,12 @@ function pizza(){
    let size;
    let crust;
    let toppings = [];
-}
+};
 
 function Topping (){
    let name;
    let side;
-}
+};
 
 pizza.prototype.addToCart = function(cart){
    cart.items.push(this);
@@ -107,7 +107,7 @@ function buildPizza() {
    myPizza.size = pizzaSizeBox.value;
    myPizza.crust = pizzaCrustBox.value;
    for (let i = 0; i < checkedToppings.length; i++) {
-     myTopping = new Topping;
+      let myTopping = new Topping;
      myTopping.name = checkedToppings[i].name;
      myTopping.side = checkedToppings[i].value;
      myPizza.addTopping(myTopping);
@@ -121,5 +121,10 @@ function updateCart() {
    myPizza =  buildPizza();
    cart.addItem(myPizza);
    console.log(cart);
+   let paragraph = document.createElement("p");
+   paragraph.textContent = summarize(myPizza);
+   cartBox.appendChild(paragraph);
+   clearPizzaImage();
+   clearToppings();
 
 }  

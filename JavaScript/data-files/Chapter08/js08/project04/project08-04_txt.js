@@ -24,6 +24,8 @@ getFileButton.onchange = function() {
 
    // Once the file has finished loading, parse the JSON file
    fr.onload=function(){ 
+      let staff = JSON.parse(fr.result);
+      staff.makeStaffTable();
 
    }
    
@@ -32,6 +34,11 @@ getFileButton.onchange = function() {
 function makeStaffTable(staff) {
    let staffTable = document.createElement("table");
    let headerRow = document.createElement("tr");
-   
-
+  
+   for (let prop in staff.directory[0]) {
+       let headerCell = document.createElement("th");
+       headerCell.textContent = prop;
+       headerRow.appendChild(headerCell)
+   }
+   staffTable.appendChild(headerRow);
 }
