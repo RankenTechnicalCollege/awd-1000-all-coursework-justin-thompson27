@@ -36,7 +36,7 @@ getLogButton.onchange = function() {
    // and store the contents in the game object literal
    fr.onload=function(){ 
       // Load data from the JSON file into the game object
-      let game = json.parse(fr.result);
+      let game = JSON.parse(fr.result);
       
       titleBox.textContent = game.title;
       descBox.textContent = game.description;
@@ -44,7 +44,7 @@ getLogButton.onchange = function() {
       writeMoveLog(game.moves);
       
       // Create a new chess set object
-      let mySet = chessSet(game);
+      let mySet = new chessSet(game);
       
       setupBoard(mySet);
       
