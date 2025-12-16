@@ -3429,14 +3429,17 @@ input, select, textarea {
 							margin-right: 0.5em;
 						}
 
-					#header nav ul li.active > a, #header nav ul li.active > span {
-						color: #e44c65;
-					}
+				/* 	#header nav ul li.active > a, #header nav ul li.active  {
+						color: aqua;
+					} */
 
 					#header nav ul li > ul {
 						display: none;
 					}
 
+					li.active{
+						color: aqua;
+					}
 	body.landing #page-wrapper {
 		padding-top: 0;
 	}
@@ -3474,7 +3477,7 @@ input, select, textarea {
 			background-image: -moz-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
 			background-image: -webkit-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
 			background-image: -ms-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
-			background-image: linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
+			background-image: linear-gradient(to top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
 			content: '';
 			display: block;
 			height: 100%;
